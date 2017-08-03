@@ -1,7 +1,7 @@
 include(../common.pri)
 QT += core gui
 
-contains(CONFIG,release) {
+CONFIG(release, debug|release) {
 	TARGET = LRDesigner
 } else {
 	TARGET = LRDesignerd
@@ -52,7 +52,7 @@ win32 {
         }
     }
     LIBS += -L$${DEST_LIBS}
-	contains(CONFIG,release) {
+	CONFIG(release, debug|release) {
 		LIBS += -llimereport
 	} else {
 		LIBS += -llimereportd

@@ -1,4 +1,4 @@
-contains(CONFIG,release) {
+CONFIG(release, debug|release) {
 	TARGET = limereport
 } else {
 	TARGET = limereportd
@@ -79,7 +79,7 @@ contains(CONFIG,zint){
     INCLUDEPATH += $$ZINT_PATH/backend $$ZINT_PATH/backend_qt4
     DEPENDPATH += $$ZINT_PATH/backend $$ZINT_PATH/backend_qt4
 	LIBS += -L$${DEST_LIBS}
-	contains(CONFIG,release) {
+	CONFIG(release, debug|release) {
 		LIBS += -lQtZint
 	} else {
 		LIBS += -lQtZintd

@@ -472,8 +472,10 @@ void ReportDesignWidget::prepareReport()
 
 void ReportDesignWidget::previewReport()
 {
-    prepareReport();
+	prepareReport();
+	this->m_mainWindow->setEnabled(false);
     report()->previewReport();
+    this->m_mainWindow->setEnabled(true);
 }
 
 void ReportDesignWidget::printReport()

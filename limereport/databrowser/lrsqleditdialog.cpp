@@ -93,6 +93,7 @@ void SQLEditDialog::setSettings(QSettings *value, bool owned){
 void SQLEditDialog::accept()
 {
     SQLEditResult result;
+	ui->pushButton->setEnabled(false);
 
     if (!ui->cbSubdetail->isChecked()){
         result.resultMode=SQLEditResult::Query;
@@ -126,6 +127,7 @@ void SQLEditDialog::accept()
     }catch(LimeReport::ReportError &exception){
         QMessageBox::critical(this,tr("Error"),exception.what());
     }
+	ui->pushButton->setEnabled(true);
 }
 
 void SQLEditDialog::showEvent(QShowEvent *)
@@ -302,6 +304,7 @@ void SQLEditDialog::slotPreviewData()
         QMessageBox::critical(this,tr("Attention"),tr("Connection is not specified"));
         return;
     }
+	ui->pbPreview->setEnabled(false);
     m_previewModel = m_datasources->previewSQL(
                 ConnectionDesc::connectionNameForReport(ui->cbbConnection->currentText()),
                 ui->textEditSQL->toPlainText(),
@@ -316,7 +319,8 @@ void SQLEditDialog::slotPreviewData()
         if (ui->gbDataPreview->isVisible())
             hidePreview();
         QMessageBox::critical(this,tr("Attention"),m_datasources->lastError());
-    }
+	}
+	ui->pbPreview->setEnabled(true);
 }
 
 void SQLEditDialog::slotHidePreview()

@@ -34,7 +34,11 @@ unix:{
     LIBS += -L$${DEST_LIBS} -llimereport
     !contains(CONFIG, static_build){
         contains(CONFIG,zint){
-            LIBS += -L$${DEST_LIBS} -lQtZint
+            CONFIG(release, debug|release) {
+				LIBS += -L$${DEST_LIBS} -lQtZint
+			} else {
+				LIBS += -L$${DEST_LIBS} -lQtZintd
+			}
         }
     }
     DESTDIR = $$DEST_DIR
@@ -62,7 +66,11 @@ win32 {
     QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$shell_quote($$EXTRA_DIR\\*) $$shell_quote($$REPORTS_DIR\\demo_reports) $$escape_expand(\\n\\t)
     !contains(CONFIG, static_build){
         contains(CONFIG,zint){
-            LIBS += -L$${DEST_LIBS} -lQtZint
+            CONFIG(release, debug|release) {
+				LIBS += -L$${DEST_LIBS} -lQtZint
+			} else {
+				LIBS += -L$${DEST_LIBS} -lQtZintd
+			}
         }
     }
     LIBS += -L$${DEST_LIBS}

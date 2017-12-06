@@ -24,7 +24,11 @@ unix:{
     LIBS += -L$${DEST_LIBS} -llimereport
     !contains(CONFIG, static_build){
         contains(CONFIG,zint){
-            LIBS += -L$${DEST_LIBS} -lQtZint
+			CONFIG(release, debug|release) {
+				LIBS += -L$${DEST_LIBS} -lQtZint
+			} else {
+				LIBS += -L$${DEST_LIBS} -lQtZintd
+			}
         }
     }
     DESTDIR = $$DEST_DIR
@@ -48,7 +52,11 @@ win32 {
     RC_FILE += mainicon.rc
     !contains(CONFIG, static_build){
         contains(CONFIG,zint){
-            LIBS += -L$${DEST_LIBS} -lQtZint
+            CONFIG(release, debug|release) {
+				LIBS += -L$${DEST_LIBS} -lQtZint
+			} else {
+				LIBS += -L$${DEST_LIBS} -lQtZintd
+			}
         }
     }
     LIBS += -L$${DEST_LIBS}

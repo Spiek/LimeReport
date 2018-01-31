@@ -99,6 +99,11 @@ void BandMarker::mousePressEvent(QGraphicsSceneMouseEvent *event)
     }
 }
 
+void BandMarker::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
+{
+    m_band->contextMenuEvent(event);
+}
+
 BandDesignIntf::BandDesignIntf(BandsType bandType, const QString &xmlTypeName, QObject* owner, QGraphicsItem *parent) :
     ItemsContainerDesignInft(xmlTypeName, owner,parent),
     m_bandType(bandType),
@@ -578,14 +583,13 @@ BaseDesignIntf *BandDesignIntf::cloneBottomPart(int height, QObject *owner, QGra
         if (item){
             if (item->geometry().top()>height){
                 BaseDesignIntf* tmpItem = item->cloneItem(item->itemMode(),bottomPart,bottomPart);
-                tmpItem->setPos(tmpItem->pos().x(),tmpItem->pos().y()-height);
+                tmpItem->setPos(tmpItem->pos().x(), (tmpItem->pos().y()-height)+borderLineSize());
             }
             else if ((item->geometry().top()<height) && (item->geometry().bottom()>height)){
                 int sliceHeight = height-item->geometry().top();
                 if (item->isSplittable() && item->canBeSplitted(sliceHeight)) {
                     BaseDesignIntf* tmpItem=item->cloneBottomPart(sliceHeight,bottomPart,bottomPart);
-                    tmpItem->setPos(tmpItem->pos().x(),0);
-                    if (tmpItem->pos().y()<0) tmpItem->setPos(tmpItem->pos().x(),0);
+                    tmpItem->setPos(tmpItem->pos().x(),borderLineSize());
                     BaseDesignIntf* slicedItem = m_slicedItems.value(tmpItem->objectName());
                     if (slicedItem){
                         qreal sizeOffset = (slicedItem->height()+tmpItem->height()) - item->height();
@@ -595,12 +599,12 @@ BaseDesignIntf *BandDesignIntf::cloneBottomPart(int height, QObject *owner, QGra
                 } else {
                     if ((item->geometry().bottom()-height)>height){
                         BaseDesignIntf* tmpItem = item->cloneItem(item->itemMode(),bottomPart,bottomPart);
-                        tmpItem->setPos(tmpItem->pos().x(),0);
+                        tmpItem->setPos(tmpItem->pos().x(),borderLineSize());
                         tmpItem->setHeight((this->height()-height));
                     } else {
                         BaseDesignIntf* tmpItem = item->cloneEmpty((this->height()-height),bottomPart,bottomPart);
                         if (tmpItem)
-                            tmpItem->setPos(tmpItem->pos().x(),0);
+                            tmpItem->setPos(tmpItem->pos().x(),borderLineSize());
                     }
                 }
             }
@@ -917,6 +921,7 @@ void BandDesignIntf::updateItemSize(DataSourceManager* dataManager, RenderPass p
 {
     qreal spaceBorder=0;
     if (keepBottomSpaceOption()) spaceBorder = bottomSpace();
+    spaceBorder = spaceBorder>0 ? spaceBorder : 0;
     if (borderLines()!=0){
         spaceBorder += borderLineSize();
     }

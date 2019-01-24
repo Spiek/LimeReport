@@ -55,12 +55,27 @@ linux{
 }
 
 win32 {
+    DESTDIR = $$DEST_DIR
+    contains(QMAKE_HOST.os, Linux){
+        QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$quote($$EXTRA_DIR) $$quote($$REPORTS_DIR) $$escape_expand(\n\t)
+    } else {
     EXTRA_DIR ~= s,/,\\,g
     DEST_DIR ~= s,/,\\,g
     REPORTS_DIR ~= s,/,\\,g
 
-    DESTDIR = $$DEST_DIR
     RC_FILE += mainicon.rc
+
+	QMAKE_POST_LINK += $$QMAKE_COPY_DIR \"$$EXTRA_DIR\" \"$$REPORTS_DIR\\demo_reports\" $$escape_expand(\\n\\t)
+    }
+}
+
+LIBS += -L$${DEST_LIBS}
+CONFIG(debug, debug|release) {
+    LIBS += -llimereportd
+} else {
+    LIBS += -llimereport
+}
+
     !contains(CONFIG, static_build){
         contains(CONFIG,zint){
             CONFIG(release, debug|release) {
@@ -79,4 +94,3 @@ win32 {
 
     QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$shell_quote($$EXTRA_DIR\\*) $$shell_quote($$REPORTS_DIR\\demo_reports) $$escape_expand(\\n\\t)
 }
-

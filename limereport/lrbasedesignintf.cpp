@@ -78,7 +78,8 @@ BaseDesignIntf::BaseDesignIntf(const QString &storageTypeName, QObject *owner, Q
     m_changingItemAlign(false),
     m_borderColor(Qt::black),
     m_reportSettings(0),
-    m_patternName("")
+    m_patternName(""),
+    m_watermark(false)
 {
     setGeometry(QRectF(0, 0, m_width, m_height));
     if (BaseDesignIntf *item = dynamic_cast<BaseDesignIntf *>(parent)) {
@@ -399,19 +400,21 @@ void BaseDesignIntf::prepareRect(QPainter *painter, const QStyleOptionGraphicsIt
 {
     painter->save();
 
+    QRectF r = rect().adjusted(0, 0, borderLineSize(), borderLineSize());
     QBrush brush(m_backgroundColor,static_cast<Qt::BrushStyle>(m_backgroundBrushStyle));
     brush.setTransform(painter->worldTransform().inverted());
 
     if (isSelected() && (opacity() == 100) && (m_BGMode!=TransparentMode)) {
-        painter->fillRect(rect(), brush);
+        painter->fillRect(r, brush);
     }
     else {
         if (m_BGMode == OpaqueMode) {
-            painter->setOpacity(qreal(m_opacity) / 100);
-            painter->fillRect(rect(), brush);
+            qreal o = (itemMode() & DesignMode) ? 0.5 : qreal(m_opacity) / 100;
+            painter->setOpacity(o);
+            painter->fillRect(r, brush);
         } else if (itemMode() & DesignMode){
             painter->setOpacity(0.1);
-            painter->fillRect(rect(), QBrush(QPixmap(":/report/images/empty")));
+            painter->fillRect(r, QBrush(QPixmap(":/report/images/empty")));
         }
     }
     painter->restore();
@@ -541,10 +544,12 @@ void BaseDesignIntf::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 
         setItemPos(QPointF(div(m_startPos.x(), hStep).quot * hStep, div(m_startPos.y(), vStep).quot * vStep) - delta);
 
-        if (!isBand() && scene()->selectedItems().count()>1)
-            moveSelectedItems(tmpPos - pos());
-        if (scene()->selectedItems().count()==1 && (page()->magneticMovement()))
-            page()->itemMoved(this);
+        if (page()){
+            if (!isBand() && page()->selectedItems().count()>1)
+                moveSelectedItems(tmpPos - pos());
+            if (page()->selectedItems().count()==1 && (page()->magneticMovement()))
+                page()->itemMoved(this);
+        }
     }
 }
 
@@ -701,6 +706,19 @@ void BaseDesignIntf::turnOnSelectionMarker(bool value)
     }
 }
 
+bool BaseDesignIntf::isWatermark() const
+{
+    return m_watermark;
+}
+
+void BaseDesignIntf::setWatermark(bool watermark)
+{
+    if (m_watermark != watermark){
+        m_watermark = watermark;
+        notify("watermark",!watermark,watermark);
+    }
+}
+
 QString BaseDesignIntf::patternName() const
 {
     return (m_patternName.isEmpty()) ? objectName() : m_patternName;
@@ -790,29 +808,29 @@ void BaseDesignIntf::setBorderLineSize(int value)
 
 void BaseDesignIntf::moveRight()
 {
-    if (!m_fixedPos) setItemPos(pos().x() + page()->horizontalGridStep(), pos().y());
+    if (!m_fixedPos && page()) setItemPos(pos().x() + page()->horizontalGridStep(), pos().y());
 }
 
 void BaseDesignIntf::moveLeft()
 {
-    if (!m_fixedPos) setItemPos(pos().x() - page()->horizontalGridStep(), pos().y());
+    if (!m_fixedPos && page()) setItemPos(pos().x() - page()->horizontalGridStep(), pos().y());
 }
 
 void BaseDesignIntf::moveDown()
 {
-    if (!m_fixedPos) setItemPos(pos().x(), pos().y() + page()->verticalGridStep());
+    if (!m_fixedPos && page()) setItemPos(pos().x(), pos().y() + page()->verticalGridStep());
 }
 
 void BaseDesignIntf::moveUp()
 {
-    if (!m_fixedPos) setItemPos(pos().x(), pos().y() - page()->verticalGridStep());
+    if (!m_fixedPos && page()) setItemPos(pos().x(), pos().y() - page()->verticalGridStep());
 }
 
 void BaseDesignIntf::sizeRight()
 {
     if ((m_possibleResizeDirectionFlags & ResizeLeft) ||
          (m_possibleResizeDirectionFlags & ResizeRight)) {
-        setWidth(width() + page()->horizontalGridStep());
+        if (page()) setWidth(width() + page()->horizontalGridStep());
     }
 }
 
@@ -820,7 +838,7 @@ void BaseDesignIntf::sizeLeft()
 {
     if ((m_possibleResizeDirectionFlags & ResizeLeft) ||
          (m_possibleResizeDirectionFlags & ResizeRight)) {
-        setWidth(width() - page()->horizontalGridStep());
+        if(page()) setWidth(width() - page()->horizontalGridStep());
     }
 }
 
@@ -828,7 +846,7 @@ void BaseDesignIntf::sizeUp()
 {
     if ((m_possibleResizeDirectionFlags & ResizeTop) ||
          (m_possibleResizeDirectionFlags & ResizeBottom)) {
-        setHeight(height() - page()->verticalGridStep());
+        if (page()) setHeight(height() - page()->verticalGridStep());
     }
 }
 
@@ -836,7 +854,7 @@ void BaseDesignIntf::sizeDown()
 {
     if ((m_possibleResizeDirectionFlags & ResizeTop) ||
          (m_possibleResizeDirectionFlags & ResizeBottom)) {
-        setHeight(height() + page()->verticalGridStep());
+        if (page()) setHeight(height() + page()->verticalGridStep());
     }
 }
 
@@ -948,7 +966,9 @@ void BaseDesignIntf::setGeometryProperty(QRectF rect)
             setWidth(rect.width());
         if (rect.height() != geometry().height())
             setHeight(rect.height());
-        if (!isLoading()) notify("geometry",oldValue,rect);
+        if (!isLoading()) {
+            notify("geometry",oldValue,rect);
+        }
     }
 }
 
@@ -1006,6 +1026,7 @@ QVariant BaseDesignIntf::itemChange(QGraphicsItem::GraphicsItemChange change, co
     if (change == QGraphicsItem::ItemPositionHasChanged) {
         updateSelectionMarker();
     }
+
     if (change == QGraphicsItem::ItemSelectedChange) {
         turnOnSelectionMarker(value.toBool());
         emit itemSelectedHasBeenChanged(this, value.toBool());
@@ -1100,30 +1121,23 @@ void BaseDesignIntf::setItemPos(const QPointF &newPos)
     QPointF oldPos = pos();
     QPointF finalPos = modifyPosForAlignedItem(newPos);
     QGraphicsItem::setPos(finalPos);
-    emit posChanged(this, finalPos, oldPos);
+    emit posChanging(this, finalPos, oldPos);
 }
 
 void BaseDesignIntf::mouseReleaseEvent(QGraphicsSceneMouseEvent *event)
 {
-    QGraphicsItem::mouseReleaseEvent(event);
     QRectF newGeometry = geometry();
     if (newGeometry != m_oldGeometry) {
         geometryChangedEvent(newGeometry, m_oldGeometry);
         updateSelectionMarker();
-        emit(geometryChanged(this, newGeometry, m_oldGeometry));
+        emit(posChanged(this, newGeometry.topLeft(), m_oldGeometry.topLeft()));
     }
+    QGraphicsItem::mouseReleaseEvent(event);
 }
 
 void BaseDesignIntf::showEditorDialog(){
     QWidget *editor = defaultEditor();
     if (editor) {
-
-#ifdef Q_OS_WIN
-        editor->setAttribute(Qt::WA_DeleteOnClose);
-        editor->setWindowFlags(Qt::Dialog);
-        editor->setWindowModality(Qt::ApplicationModal);
-        editor->show();
-#else
         QDialog* dialog = new QDialog(QApplication::activeWindow());
         dialog->setAttribute(Qt::WA_DeleteOnClose);
 #ifdef Q_OS_MAC
@@ -1137,7 +1151,6 @@ void BaseDesignIntf::showEditorDialog(){
         dialog->layout()->addWidget(editor);
         connect(editor,SIGNAL(destroyed()),dialog,SLOT(close()));
         dialog->exec();
-#endif
     }
 }
 
@@ -1153,6 +1166,7 @@ void BaseDesignIntf::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event)
 
 void BaseDesignIntf::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
 {
+    if (!(flags() & QGraphicsItem::ItemIsSelectable)) return;
     PageDesignIntf* page = dynamic_cast<PageDesignIntf*>(scene());
     if (!page->selectedItems().contains(this)){
         page->clearSelection();
@@ -1320,7 +1334,7 @@ void BaseDesignIntf::collectionLoadFinished(const QString &collectionName)
             foreach(QObject * obj, QObject::children()) {
 #endif
                 BaseDesignIntf *item = dynamic_cast<BaseDesignIntf *>(obj);
-                if (item) {
+                if (item && page()) {
                     page()->registerItem(item);
                 }
             }

@@ -116,11 +116,13 @@ public:
     bool canContainChildren(){ return true;}
     bool resetPageNumber() const;
     void setResetPageNumber(bool resetPageNumber);
-    void updateSubItemsSize(RenderPass pass, DataSourceManager *dataManager);
+    void updateSubItemsSize(RenderPass pass, DataSourceManager *dataManager);    
+    void swapBands(BandDesignIntf *band, BandDesignIntf *bandToSwap);    
+    void moveBandFromTo(int from, int to);
 
 protected slots:
     void bandDeleted(QObject* band);
-    void bandGeometryChanged(QObject* object, QRectF newGeometry, QRectF oldGeometry);
+    void bandPositionChanged(QObject* object, QPointF newPos, QPointF oldPos);
 protected:
     void    collectionLoadFinished(const QString& collectionName);
     QRectF& pageRect(){return m_pageRect;}

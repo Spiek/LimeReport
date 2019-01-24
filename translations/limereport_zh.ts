@@ -1,48 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr_FR">
+<TS version="2.1" language="zh_CN">
 <context>
     <name>LRVariableDialog</name>
     <message>
-        <location filename="../limereport/databrowser/lrvariabledialog.ui" line="14"/>
         <source>Variable</source>
-        <translation>Variable</translation>
+        <translation>变量</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrvariabledialog.ui" line="53"/>
         <source>Name</source>
-        <translation>Nom</translation>
+        <translation>名称</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrvariabledialog.ui" line="63"/>
         <source>Value</source>
-        <translation>Valeur</translation>
+        <translation>值</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrvariabledialog.ui" line="76"/>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation>类型</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrvariabledialog.cpp" line="92"/>
         <source>Attention</source>
-        <translation></translation>
+        <translation>注意</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::AboutDialog</name>
     <message>
-        <location filename="../limereport/lraboutdialog.ui" line="14"/>
         <source>About</source>
-        <translation>A propos</translation>
+        <translation>关于</translation>
     </message>
     <message>
-        <location filename="../limereport/lraboutdialog.ui" line="24"/>
         <source>Lime Report</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lraboutdialog.ui" line="33"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -56,15 +48,25 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; font-weight:600; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Copyright 2015 Arin Alexander. All rights reserved.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/report/images/logo_100.png&quot; height=&quot;100&quot; style=&quot;float: left;&quot; /&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#7faa18;&quot;&gt;Qt&lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;报表引擎&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;LimeReport - QT框架多平台C++库，帮助开发者给应用增加基于模板生成报表及打印报表功能。&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;官方网站: &lt;/span&gt;&lt;a href=&quot;www.limereport.ru&quot;&gt;&lt;span style=&quot; font-size:11pt; text-decoration: underline; color:#0000ff;&quot;&gt;www.limereport.ru&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt; text-decoration: underline; color:#0000ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;该库基于提供帮助目的发布，但不提供任何担保，不以任何形式提供其适销性或适用于某一特定用途的默示保证。&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; font-weight:600; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;版权 2015 Arin Alexander.所有权利保留.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../limereport/lraboutdialog.ui" line="53"/>
         <source>Author</source>
-        <translation>Auteur</translation>
+        <translation>作者</translation>
     </message>
     <message>
-        <location filename="../limereport/lraboutdialog.ui" line="62"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -74,12 +76,10 @@ p, li { white-space: pre-wrap; }
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lraboutdialog.ui" line="75"/>
         <source>License</source>
-        <translation>Licence</translation>
+        <translation>许可</translation>
     </message>
     <message>
-        <location filename="../limereport/lraboutdialog.ui" line="84"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -197,2993 +197,2311 @@ p, li { white-space: pre-wrap; }
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lraboutdialog.ui" line="223"/>
         <source>Close</source>
-        <translation>Fermer</translation>
+        <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../limereport/lraboutdialog.ui" line="232"/>
         <source>Version 1.1.1</source>
-        <translation></translation>
+        <translation>版本 1.1.1</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::AlignmentPropItem</name>
     <message>
-        <location filename="../limereport/items/lralignpropitem.cpp" line="68"/>
         <source>Left</source>
-        <translation>Gauche</translation>
+        <translation>左</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lralignpropitem.cpp" line="69"/>
         <source>Right</source>
-        <translation>Droite</translation>
+        <translation>右</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lralignpropitem.cpp" line="70"/>
-        <location filename="../limereport/items/lralignpropitem.cpp" line="74"/>
         <source>Center</source>
-        <translation>Centré</translation>
+        <translation>居中</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lralignpropitem.cpp" line="71"/>
         <source>Justify</source>
-        <translation>Justifié</translation>
+        <translation>对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lralignpropitem.cpp" line="73"/>
         <source>Top</source>
-        <translation>Haut</translation>
+        <translation>顶</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lralignpropitem.cpp" line="75"/>
         <source>Botom</source>
-        <translation>Bas</translation>
+        <translation>底</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lralignpropitem.cpp" line="77"/>
         <source>horizontal</source>
-        <translation>Horizontal</translation>
+        <translation>水平</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lralignpropitem.cpp" line="78"/>
         <source>vertical</source>
-        <translation>Vertical</translation>
+        <translation>垂直</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::BandDesignIntf</name>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="229"/>
         <source>DataBand</source>
-        <translation>bande de données</translation>
+        <translation>数据带</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="230"/>
         <source>DataHeaderBand</source>
-        <translation>En-tête de données</translation>
+        <translation>数据带头</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="231"/>
         <source>DataFooterBand</source>
-        <translation>Bande de pied de données</translation>
+        <translation>数据带脚</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="232"/>
         <source>ReportHeader</source>
-        <translation>En-tête du rapport</translation>
+        <translation>表头</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="233"/>
         <source>ReportFooter</source>
-        <translation>Pied du rapport</translation>
+        <translation>表脚</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="234"/>
         <source>PageHeader</source>
-        <translation>En-tête de page</translation>
+        <translation>页眉</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="235"/>
         <source>PageFooter</source>
-        <translation>Pied de page</translation>
+        <translation>页脚</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="236"/>
         <source>SubDetailBand</source>
-        <translation>Bande de sous-détails</translation>
+        <translation>子细节带</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="237"/>
         <source>SubDetailHeaderBand</source>
-        <translation>En-tête de sous-détails</translation>
+        <translation>子细节带头</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="238"/>
         <source>SubDetailFooterBand</source>
-        <translation>Pied de sous-détails</translation>
+        <translation>子细节带脚</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="239"/>
         <source>GroupBandHeader</source>
-        <translation>Bande de groupe d&apos;en-tête</translation>
+        <translation>组带头</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="240"/>
         <source>GroupBandFooter</source>
-        <translation>Bande de groupe de pieds</translation>
+        <translation>组带脚</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="241"/>
         <source>TearOffBand</source>
-        <translation>Bande détachable</translation>
+        <translation>分离带</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="252"/>
         <source> connected to </source>
-        <translation> Connecté à </translation>
+        <translation>连接到</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="476"/>
         <source>Bring to top</source>
-        <translation>Placer au premier-plan</translation>
+        <translation>置顶</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="477"/>
         <source>Send to back</source>
-        <translation>Placer en arrière-plan</translation>
+        <translation>置底</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="482"/>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="505"/>
         <source>Auto height</source>
-        <translation>Hauteur automatique</translation>
+        <translation>自动高度</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="486"/>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="508"/>
         <source>Splittable</source>
-        <translation>Divisible</translation>
+        <translation>可拆分</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="490"/>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="511"/>
         <source>Keep bottom space</source>
-        <translation>Garder l&apos;espace inférieur</translation>
+        <translation>保持底部距离</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="494"/>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="517"/>
         <source>Start from new page</source>
-        <translation>Démarrer depuis une nouvelle page</translation>
+        <translation>从新页开始</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="498"/>
-        <location filename="../limereport/lrbanddesignintf.cpp" line="514"/>
         <source>Start new page</source>
-        <translation>Démarrer une nouvelle page</translation>
+        <translation>开始新页</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::BaseDesignIntf</name>
     <message>
-        <location filename="../limereport/lrbasedesignintf.cpp" line="1163"/>
         <source>Copy</source>
-        <translation>Copier</translation>
+        <translation>复制</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbasedesignintf.cpp" line="1165"/>
         <source>Cut</source>
-        <translation>Couper</translation>
+        <translation>剪切</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbasedesignintf.cpp" line="1167"/>
         <source>Paste</source>
-        <translation>Coller</translation>
+        <translation>粘贴</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbasedesignintf.cpp" line="1176"/>
         <source>Bring to top</source>
-        <translation>Placer au premier-plan</translation>
+        <translation>置顶</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbasedesignintf.cpp" line="1177"/>
         <source>Send to back</source>
-        <translation>Placer en arrière-plan</translation>
+        <translation>置底</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbasedesignintf.cpp" line="1179"/>
         <source>No borders</source>
-        <translation>Aucune bordure</translation>
+        <translation>无边框</translation>
     </message>
     <message>
-        <location filename="../limereport/lrbasedesignintf.cpp" line="1180"/>
         <source>All borders</source>
-        <translation>Toutes les bordures</translation>
+        <translation>所有边框</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ConnectionDesc</name>
     <message>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="377"/>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="382"/>
         <source>defaultConnection</source>
-        <translation>Connexion par défaut</translation>
+        <translation>默认连接</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ConnectionDialog</name>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="14"/>
-        <location filename="../limereport/databrowser/lrconnectiondialog.cpp" line="88"/>
         <source>Connection</source>
-        <translation>Connexion</translation>
+        <translation>数据连接</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="26"/>
         <source>Connection Name</source>
-        <translation>Nom de la connexion</translation>
+        <translation>连接名称</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="42"/>
         <source>Use default application connection</source>
-        <translation>Utiliser la connexion par défaut de l&apos;application</translation>
+        <translation>使用默认应用连接</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="53"/>
         <source>Driver</source>
-        <translation>Pilote</translation>
+        <translation>驱动</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="60"/>
         <source>Server </source>
-        <translation>Serveur </translation>
+        <translation>服务器</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="67"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>端口</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="74"/>
         <source>User</source>
-        <translation>Utilisateur</translation>
+        <translation>用户名</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="81"/>
         <source>Password</source>
-        <translation>Mot de passe</translation>
+        <translation>密码</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="88"/>
         <source>Database</source>
-        <translation>Base de données</translation>
+        <translation>数据库</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="141"/>
         <source>...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="154"/>
         <source>Auto connect</source>
-        <translation>Connexion automatique</translation>
+        <translation>自动连接</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="161"/>
         <source>Dont keep credentals in lrxml</source>
-        <translation>Ne pas enregistrer les informations personnelles</translation>
+        <translation>不在lrxml文件中保存凭证</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="183"/>
         <source>Check connection</source>
-        <translation>Vérifier la connexion</translation>
+        <translation>检查连接</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="206"/>
         <source>Cancel</source>
-        <translation>Annuler</translation>
+        <translation>取消</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.ui" line="216"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.cpp" line="80"/>
-        <location filename="../limereport/databrowser/lrconnectiondialog.cpp" line="90"/>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>错误</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.cpp" line="88"/>
         <source>Connection succsesfully established!</source>
-        <translation>Connexion réussie!</translation>
+        <translation>连接成功建立!</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.cpp" line="96"/>
         <source>Connection Name is empty</source>
-        <translation>Nom de la connexion vide</translation>
+        <translation>连接名为空</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.cpp" line="98"/>
         <source>Connection with name </source>
-        <translation></translation>
+        <translation>连接</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.cpp" line="98"/>
         <source> already exists! </source>
-        <translation> existe déja! </translation>
+        <translation>已经存在!</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrconnectiondialog.cpp" line="156"/>
         <source>defaultConnection</source>
-        <translation></translation>
+        <translation>默认连接</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::DataBand</name>
     <message>
-        <location filename="../limereport/bands/lrdataband.cpp" line="72"/>
         <source>Data</source>
-        <translation>Données</translation>
+        <translation>数据带</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::DataBrowser</name>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="14"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="42"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="67"/>
         <source>Datasources</source>
-        <translation>Source de données</translation>
+        <translation>数据源</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="65"/>
         <source>Add database connection</source>
-        <translation>Ajouter une connexion à la base de données</translation>
+        <translation>新建数据库连接</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="68"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="91"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="114"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="137"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="173"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="199"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="225"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="251"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="277"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="360"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="389"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="415"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="441"/>
         <source>...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="170"/>
         <source>Add new datasource</source>
-        <translation>Ajouter une nouvelle source de données</translation>
+        <translation>新建数据源</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="196"/>
         <source>View data</source>
-        <translation>Aperçu des données</translation>
+        <translation>查看数据</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="222"/>
         <source>Change datasource</source>
-        <translation>Modifier la source de données</translation>
+        <translation>编辑数据源</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="248"/>
         <source>Delete datasource</source>
-        <translation>Supprimer la source de données</translation>
+        <translation>删除数据源</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="274"/>
         <source>Show error</source>
-        <translation>Afficher l&apos;erreur</translation>
+        <translation>显示错误</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="334"/>
         <source>Variables</source>
-        <translation></translation>
+        <translation>变量</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="357"/>
         <source>Add new variable</source>
-        <translation>Ajouter une variable</translation>
+        <translation>新增变量</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="386"/>
         <source>Edit variable</source>
-        <translation>Modifier une variable</translation>
+        <translation>编辑变量</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="412"/>
         <source>Delete variable</source>
-        <translation>Supprimer une variable</translation>
+        <translation>删除变量</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.ui" line="438"/>
         <source>Grab variable</source>
-        <translation>Saisir une variable</translation>
+        <translation>取得变量</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="133"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="397"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="565"/>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="769"/>
         <source>Attention</source>
-        <translation></translation>
+        <translation>注意</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="134"/>
         <source>Do you really want to delete &quot;%1&quot; connection?</source>
-        <translation>Voulez-vous vraiment supprimer la connexion &quot;%1&quot;?</translation>
+        <translation>是否确认删除&quot;%1&quot;连接?</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="214"/>
         <source>Report variables</source>
-        <translation>Variables du rapport</translation>
+        <translation>报表变量</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="216"/>
         <source>System variables</source>
-        <translation>Variables système</translation>
+        <translation>系统变量</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="218"/>
         <source>External variables</source>
-        <translation>Variables externe</translation>
+        <translation>外部变量</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="398"/>
         <source>Do you really want to delete &quot;%1&quot; datasource?</source>
-        <translation>Vouz-vous vraiment supprimer la source de donnée &quot;%1&quot;?</translation>
+        <translation>是否确认删除&quot;%1&quot;数据源?</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="769"/>
         <source>Do you really want to delete variable &quot;%1&quot;?</source>
-        <translation>Vouz-vous vraiment supprimer la variable &quot;%1&quot;?</translation>
+        <translation>是否确认删除变量&quot;%1&quot;?</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrdatabrowser.cpp" line="806"/>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>错误</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::DataFooterBand</name>
     <message>
-        <location filename="../limereport/bands/lrdataband.cpp" line="102"/>
         <source>DataFooter</source>
-        <translation>Pied de données</translation>
+        <translation>数据带脚</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::DataHeaderBand</name>
     <message>
-        <location filename="../limereport/bands/lrdataband.cpp" line="95"/>
         <source>DataHeader</source>
-        <translation>En-tête de données</translation>
+        <translation>数据带头</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::DataSourceManager</name>
     <message>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="393"/>
         <source>Connection &quot;%1&quot; is not open</source>
-        <translation>La connexion &quot;%1&quot; n&apos;est pas ouverte</translation>
+        <translation>连接&quot;%1&quot;没有打开</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="426"/>
         <source>Variable &quot;%1&quot; not found!</source>
-        <translation>Variable &quot;%1&quot; introuvable!</translation>
+        <translation>未找到变量&quot;%1&quot;!</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="599"/>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="966"/>
         <source>Datasource &quot;%1&quot; not found!</source>
-        <translation>Source de donnée &quot;%1&quot; introuvable!</translation>
+        <translation>未找到数据源&quot;%1&quot;!</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="682"/>
         <source>Connection with name &quot;%1&quot; already exists!</source>
-        <translation>La connexion avec le nom &quot;%1&quot; existe déja!</translation>
+        <translation>连接 &quot;%1&quot; 已存在!</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="707"/>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="716"/>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="725"/>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="732"/>
         <source>Datasource with name &quot;%1&quot; already exists!</source>
-        <translation>La source de donnée avec le nom &quot;%1&quot; existe déja!</translation>
+        <translation>数据源 &quot;%1&quot; 已存在!</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="763"/>
         <source>Database &quot;%1&quot; not found</source>
-        <translation>Base de données &quot;%1 introuvable</translation>
+        <translation>未找到数据库 &quot;%1&quot;</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="939"/>
         <source>invalid connection</source>
-        <translation>Connexion invalide</translation>
+        <translation>无效连接</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::DataSourceModel</name>
     <message>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="184"/>
         <source>Datasources</source>
-        <translation>Source de données</translation>
+        <translation>数据源</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="208"/>
         <source>Variables</source>
-        <translation></translation>
+        <translation>变量</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatasourcemanager.cpp" line="213"/>
         <source>External variables</source>
-        <translation>Variables externe</translation>
+        <translation>外部变量</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::EnumPropItem</name>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="88"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>默认</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="89"/>
         <source>Portrait</source>
-        <translation type="unfinished"></translation>
+        <translation>纵向</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="90"/>
         <source>Landscape</source>
-        <translation type="unfinished"></translation>
+        <translation>横向</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="91"/>
         <source>NoneAutoWidth</source>
-        <translation type="unfinished"></translation>
+        <translation>无自动宽度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="92"/>
         <source>MaxWordLength</source>
-        <translation type="unfinished"></translation>
+        <translation>最大词长</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="93"/>
         <source>MaxStringLength</source>
-        <translation type="unfinished"></translation>
+        <translation>最大字符串长</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="94"/>
         <source>TransparentMode</source>
-        <translation type="unfinished"></translation>
+        <translation>透明模式</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="95"/>
         <source>OpaqueMode</source>
-        <translation type="unfinished"></translation>
+        <translation>不透明模式</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="96"/>
         <source>Angle0</source>
-        <translation type="unfinished"></translation>
+        <translation>0度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="97"/>
         <source>Angle90</source>
-        <translation type="unfinished"></translation>
+        <translation>90度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="98"/>
         <source>Angle180</source>
-        <translation type="unfinished"></translation>
+        <translation>180度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="99"/>
         <source>Angle270</source>
-        <translation type="unfinished"></translation>
+        <translation>270度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="100"/>
         <source>Angle45</source>
-        <translation type="unfinished"></translation>
+        <translation>45度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="101"/>
         <source>Angle315</source>
-        <translation type="unfinished"></translation>
+        <translation>315度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="102"/>
         <source>DateTime</source>
-        <translation type="unfinished"></translation>
+        <translation>日期时间</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="103"/>
         <source>Double</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="104"/>
         <source>NoBrush</source>
-        <translation type="unfinished"></translation>
+        <translation>无</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="105"/>
         <source>SolidPattern</source>
-        <translation type="unfinished"></translation>
+        <translation>填充</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="106"/>
         <source>Dense1Pattern</source>
-        <translation type="unfinished"></translation>
+        <translation>密集1</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="107"/>
         <source>Dense2Pattern</source>
-        <translation type="unfinished"></translation>
+        <translation>密集2</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="108"/>
         <source>Dense3Pattern</source>
-        <translation type="unfinished"></translation>
+        <translation>密集3</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="109"/>
         <source>Dense4Pattern</source>
-        <translation type="unfinished"></translation>
+        <translation>密集4</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="110"/>
         <source>Dense5Pattern</source>
-        <translation type="unfinished"></translation>
+        <translation>密集5</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="111"/>
         <source>Dense6Pattern</source>
-        <translation type="unfinished"></translation>
+        <translation>密集6</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="112"/>
         <source>Dense7Pattern</source>
-        <translation type="unfinished"></translation>
+        <translation>密集7</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="113"/>
         <source>HorPattern</source>
-        <translation type="unfinished"></translation>
+        <translation>横条纹</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="114"/>
         <source>VerPattern</source>
-        <translation type="unfinished"></translation>
+        <translation>竖条纹</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="115"/>
         <source>CrossPattern</source>
-        <translation type="unfinished"></translation>
+        <translation>交叉条纹</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="116"/>
         <source>BDiagPattern</source>
-        <translation type="unfinished"></translation>
+        <translation>斜条纹</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="117"/>
         <source>FDiagPattern</source>
-        <translation type="unfinished"></translation>
+        <translation>反斜条纹</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="118"/>
         <source>LeftToRight</source>
-        <translation type="unfinished"></translation>
+        <translation>从左到右</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="119"/>
         <source>RightToLeft</source>
-        <translation type="unfinished"></translation>
+        <translation>从右到左</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="120"/>
         <source>LayoutDirectionAuto</source>
-        <translation type="unfinished"></translation>
+        <translation>自动布局方向</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="121"/>
         <source>LeftItemAlign</source>
-        <translation type="unfinished"></translation>
+        <translation>左对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="122"/>
         <source>RightItemAlign</source>
-        <translation type="unfinished"></translation>
+        <translation>右对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="123"/>
         <source>CenterItemAlign</source>
-        <translation type="unfinished"></translation>
+        <translation>居中对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="124"/>
         <source>ParentWidthItemAlign</source>
-        <translation type="unfinished"></translation>
+        <translation>上层宽度对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="125"/>
         <source>DesignedItemAlign</source>
-        <translation type="unfinished"></translation>
+        <translation>保持设计对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="126"/>
         <source>HorizontalLine</source>
-        <translation type="unfinished"></translation>
+        <translation>水平线</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="127"/>
         <source>VerticalLine</source>
-        <translation type="unfinished"></translation>
+        <translation>垂直线</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="128"/>
         <source>Ellipse</source>
-        <translation type="unfinished"></translation>
+        <translation>椭圆</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="129"/>
         <source>Rectangle</source>
-        <translation type="unfinished"></translation>
+        <translation>矩形</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="130"/>
         <source>Page</source>
-        <translation type="unfinished"></translation>
+        <translation>页</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="131"/>
         <source>Band</source>
-        <translation type="unfinished"></translation>
+        <translation>带</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="132"/>
         <source>Horizontal</source>
-        <translation type="unfinished"></translation>
+        <translation>水平</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="133"/>
         <source>Vertical</source>
-        <translation type="unfinished"></translation>
+        <translation>垂直</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="134"/>
         <source>VerticalUniform</source>
-        <translation type="unfinished"></translation>
+        <translation>均匀垂直</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::FlagsPropItem</name>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrflagspropitem.cpp" line="121"/>
         <source>NoLine</source>
-        <translation type="unfinished"></translation>
+        <translation>无边框</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrflagspropitem.cpp" line="122"/>
         <source>TopLine</source>
-        <translation type="unfinished">Ligne supérieur</translation>
+        <translation>顶边框</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrflagspropitem.cpp" line="123"/>
         <source>BottomLine</source>
-        <translation type="unfinished">Ligne inférieur</translation>
+        <translation>底边框</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrflagspropitem.cpp" line="124"/>
         <source>LeftLine</source>
-        <translation type="unfinished">Ligne gauche</translation>
+        <translation>左边框</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrflagspropitem.cpp" line="125"/>
         <source>RightLine</source>
-        <translation type="unfinished">Ligne droite</translation>
+        <translation>右边框</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::FontEditorWidget</name>
     <message>
-        <location filename="../limereport/items/editors/lrfonteditorwidget.cpp" line="86"/>
         <source>Font bold</source>
-        <translation>Caractères en gras</translation>
+        <translation>粗体</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lrfonteditorwidget.cpp" line="92"/>
         <source>Font Italic</source>
-        <translation>Caractères en italique</translation>
+        <translation>斜体</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lrfonteditorwidget.cpp" line="98"/>
         <source>Font Underline</source>
-        <translation>Caractères Soulignées</translation>
+        <translation>下划线</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::FontPropItem</name>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrfontpropitem.cpp" line="54"/>
         <source>bold</source>
-        <translation>Gras</translation>
+        <translation>粗体</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrfontpropitem.cpp" line="55"/>
         <source>italic</source>
-        <translation>Italique</translation>
+        <translation>斜体</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrfontpropitem.cpp" line="56"/>
         <source>underline</source>
-        <translation>Souligné</translation>
+        <translation>下划线</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrfontpropitem.cpp" line="57"/>
         <source>size</source>
-        <translation>Taille</translation>
+        <translation>字号</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrfontpropitem.cpp" line="58"/>
         <source>family</source>
-        <translation>Police</translation>
+        <translation>系列</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::GroupBandFooter</name>
     <message>
-        <location filename="../limereport/bands/lrgroupbands.cpp" line="205"/>
         <source>GroupFooter</source>
-        <translation>Pied de groupe</translation>
+        <translation>组带脚</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::GroupBandHeader</name>
     <message>
-        <location filename="../limereport/bands/lrgroupbands.cpp" line="67"/>
         <source>GroupHeader</source>
-        <translation>En-tête de groupe</translation>
+        <translation>组带头</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrgroupbands.cpp" line="142"/>
         <source>Group field not found</source>
-        <translation>Champ de groupe non trouvé</translation>
+        <translation>未找到组字段</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrgroupbands.cpp" line="158"/>
         <source>Datasource &quot;%1&quot; not found!</source>
-        <translation>Source de donnée &quot;%1&quot; introuvable!</translation>
+        <translation>未找到数据源 &quot;%1&quot;!</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::GroupFunction</name>
     <message>
-        <location filename="../limereport/lrgroupfunctions.cpp" line="54"/>
         <source>Field &quot;%1&quot; not found</source>
-        <translation>Champ &quot;%1 introuvable</translation>
+        <translation>未找到字段 &quot;%1&quot;</translation>
     </message>
     <message>
-        <location filename="../limereport/lrgroupfunctions.cpp" line="64"/>
         <source>Variable &quot;%1&quot; not found</source>
-        <translation>Variable &quot;%1&quot; introuvable</translation>
+        <translation>未找到变量 &quot;%1&quot;</translation>
     </message>
     <message>
-        <location filename="../limereport/lrgroupfunctions.cpp" line="74"/>
         <source>Wrong script syntax &quot;%1&quot; </source>
-        <translation>Syntaxe incorrecte du script &quot;%1&quot; </translation>
+        <translation>脚本语法错误 &quot;%1&quot;</translation>
     </message>
     <message>
-        <location filename="../limereport/lrgroupfunctions.cpp" line="85"/>
         <source>Item &quot;%1&quot; not found</source>
-        <translation>Elément &quot;%1&quot; introuvable</translation>
+        <translation>未找到目标项 &quot;%1&quot;</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ImageItem</name>
     <message>
-        <location filename="../limereport/items/lrimageitem.cpp" line="260"/>
         <source>Image</source>
-        <translation>Image</translation>
+        <translation>图像</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ItemLocationPropItem</name>
     <message>
-        <location filename="../limereport/items/lrsubitemparentpropitem.cpp" line="51"/>
         <source>Band</source>
-        <translation type="unfinished"></translation>
+        <translation>带</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrsubitemparentpropitem.cpp" line="52"/>
         <source>Page</source>
-        <translation type="unfinished"></translation>
+        <translation>页</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ItemsAlignmentEditorWidget</name>
     <message>
-        <location filename="../limereport/items/editors/lritemsaligneditorwidget.cpp" line="120"/>
         <source>Bring to top</source>
-        <translation>Placer au premier-plan</translation>
+        <translation>置顶</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsaligneditorwidget.cpp" line="125"/>
         <source>Send to back</source>
-        <translation>Placer en arrière-plan</translation>
+        <translation>置底</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsaligneditorwidget.cpp" line="130"/>
         <source>Align to left</source>
-        <translation>Aligner à gauche</translation>
+        <translation>左对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsaligneditorwidget.cpp" line="135"/>
         <source>Align to right</source>
-        <translation>Aligner à droite</translation>
+        <translation>右对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsaligneditorwidget.cpp" line="140"/>
         <source>Align to vertical center</source>
-        <translation>Aligner au centre vertical</translation>
+        <translation>居中对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsaligneditorwidget.cpp" line="145"/>
         <source>Align to top</source>
-        <translation>Aligner en haut</translation>
+        <translation>顶部对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsaligneditorwidget.cpp" line="150"/>
         <source>Align to bottom</source>
-        <translation>Aligner en bas</translation>
+        <translation>底部对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsaligneditorwidget.cpp" line="155"/>
         <source>Align to horizontal center</source>
-        <translation>Aligner au centre horizontal</translation>
+        <translation>水平居中</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsaligneditorwidget.cpp" line="160"/>
         <source>Set same height</source>
-        <translation>Définir la même hauteur</translation>
+        <translation>相同高度</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsaligneditorwidget.cpp" line="165"/>
         <source>Set same width</source>
-        <translation>Définir la même largeur</translation>
+        <translation>相同宽度</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ItemsBordersEditorWidget</name>
     <message>
-        <location filename="../limereport/items/editors/lritemsborderseditorwidget.cpp" line="94"/>
         <source>Top line</source>
-        <translation>ligne plus haut</translation>
+        <translation>顶边框</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsborderseditorwidget.cpp" line="100"/>
         <source>Bottom line</source>
-        <translation>Ligne plus bas</translation>
+        <translation>底边框</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsborderseditorwidget.cpp" line="106"/>
         <source>Left line</source>
-        <translation>Ligne gauche</translation>
+        <translation>左边框</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsborderseditorwidget.cpp" line="112"/>
         <source>Right line</source>
-        <translation>Ligne droite</translation>
+        <translation>右边框</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsborderseditorwidget.cpp" line="120"/>
         <source>No borders</source>
-        <translation>Aucune bordure</translation>
+        <translation>无边框</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lritemsborderseditorwidget.cpp" line="125"/>
         <source>All borders</source>
-        <translation>Toutes les bordures</translation>
+        <translation>所有边框</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::MasterDetailProxyModel</name>
     <message>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="623"/>
         <source>Field: &quot;%1&quot; not found in &quot;%2&quot; child datasource</source>
-        <translation>Le champ: &quot;%1&quot;est introuvable dans la source de donnée enfant &quot;%2&quot;</translation>
+        <translation>从数据源 &quot;%2&quot; 中未找到字段: &quot;%1&quot;</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="636"/>
         <source>Field: &quot;%1&quot; not found in &quot;%2&quot; master datasource</source>
-        <translation>Le champ: &quot;%1&quot;est introuvable dans la source de donnée principale &quot;%2&quot;</translation>
+        <translation>主数据源 &quot;%2&quot; 中未找到字段: &quot;%1&quot;</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ModelToDataSource</name>
     <message>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="338"/>
         <source>model is destroyed</source>
-        <translation>Le modèle a été supprimé</translation>
+        <translation>数据模型已销毁</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ObjectBrowser</name>
     <message>
-        <location filename="../limereport/objectsbrowser/lrobjectbrowser.cpp" line="45"/>
         <source>Objects</source>
-        <translation>Objets</translation>
+        <translation>对象</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::PageFooter</name>
     <message>
-        <location filename="../limereport/bands/lrpagefooter.cpp" line="54"/>
         <source>Page Footer</source>
-        <translation>Pied de page</translation>
+        <translation>页脚</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::PageHeader</name>
     <message>
-        <location filename="../limereport/bands/lrpageheader.cpp" line="57"/>
         <source>Page Header</source>
-        <translation>En-tête de page</translation>
+        <translation>页眉</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::PageItemDesignIntf</name>
     <message>
-        <location filename="../limereport/lrpageitemdesignintf.cpp" line="542"/>
         <source>Paste</source>
-        <translation>Coller</translation>
+        <translation>粘贴</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::PreviewReportWidget</name>
     <message>
-        <location filename="../limereport/lrpreviewreportwidget.ui" line="14"/>
         <source>Form</source>
-        <translation>Formulaire</translation>
+        <translation>表格</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwidget.cpp" line="177"/>
         <source>PDF file name</source>
-        <translation>Nom du fichier PDF</translation>
+        <translation>PDF 文件名</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwidget.cpp" line="207"/>
         <source>Report file name</source>
-        <translation>Nom du fichier du rapport</translation>
+        <translation>报表文件名</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::PreviewReportWindow</name>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="14"/>
         <source>Preview</source>
-        <translation>Aperçu avant impression</translation>
+        <translation>预览</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="43"/>
         <source>View</source>
-        <translation>Vue</translation>
+        <translation>查看</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="52"/>
         <source>Report</source>
-        <translation>Rapport</translation>
+        <translation>报表</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="63"/>
         <source>toolBar</source>
-        <translation>Barre d&apos;outil</translation>
+        <translation>工具栏</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="102"/>
         <source>Print</source>
-        <translation>Imprimer</translation>
+        <translation>打印</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="105"/>
         <source>Ctrl+P</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="114"/>
         <source>Zoom In</source>
-        <translation>Zoom avant</translation>
+        <translation>放大</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="123"/>
         <source>Zoom Out</source>
-        <translation>Zoom arrière</translation>
+        <translation>缩小</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="132"/>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="135"/>
         <source>Prior Page</source>
-        <translation>Page prioritaire</translation>
+        <translation>上一页</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="144"/>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="147"/>
         <source>Next Page</source>
-        <translation>Page suivante</translation>
+        <translation>下一页</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="156"/>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="159"/>
         <source>Close Preview</source>
-        <translation>Fermer l&apos;aperçu</translation>
+        <translation>关闭预览</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="162"/>
         <source>Esc</source>
-        <translation>Echap</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="174"/>
-        <source>Edit Mode</source>
-        <translation>Mode d&apos;édition</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="183"/>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="186"/>
-        <source>Save to file</source>
-        <translation>Enregistrer dans un fichier</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="198"/>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="201"/>
-        <source>Show errors</source>
-        <translation>Afficher les erreurs</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="210"/>
-        <source>First Page</source>
-        <translation>Première page</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="213"/>
-        <source>First page</source>
-        <translation>Première page</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="222"/>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="225"/>
-        <source>Last Page</source>
-        <translation>Dernièr page</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="234"/>
-        <source>Print To PDF</source>
-        <translation>Enregistrer en format PDF</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="243"/>
-        <source>Fit page width</source>
-        <translation>Ajuster la largeur de la page</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="252"/>
-        <source>Fit page</source>
-        <translation>Ajuster la page</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="261"/>
-        <source>One to one</source>
-        <translation>Page par Page</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="276"/>
-        <source>Show Toolbar</source>
-        <translation>Afficher la barre d&apos;outil</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.ui" line="279"/>
-        <source>Show toolbar</source>
-        <translation>Afficher la barre d&apos;outil</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrpreviewreportwindow.cpp" line="54"/>
-        <source>Page: </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.cpp" line="67"/>
+        <source>Edit Mode</source>
+        <translation>编辑模式</translation>
+    </message>
+    <message>
+        <source>Save to file</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <source>Show errors</source>
+        <translation>显示错误</translation>
+    </message>
+    <message>
+        <source>First Page</source>
+        <translation>首页</translation>
+    </message>
+    <message>
+        <source>First page</source>
+        <translation>首页</translation>
+    </message>
+    <message>
+        <source>Last Page</source>
+        <translation>末页</translation>
+    </message>
+    <message>
+        <source>Print To PDF</source>
+        <translation>打印到PDF文件</translation>
+    </message>
+    <message>
+        <source>Fit page width</source>
+        <translation>适合页宽</translation>
+    </message>
+    <message>
+        <source>Fit page</source>
+        <translation>适合页高</translation>
+    </message>
+    <message>
+        <source>One to one</source>
+        <translation>原始尺寸</translation>
+    </message>
+    <message>
+        <source>Show Toolbar</source>
+        <translation>显示工具栏</translation>
+    </message>
+    <message>
+        <source>Show toolbar</source>
+        <translation>显示工具栏</translation>
+    </message>
+    <message>
+        <source>Page: </source>
+        <translation>页数:</translation>
+    </message>
+    <message>
         <source>Font</source>
-        <translation>Police</translation>
+        <translation>字体</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.cpp" line="70"/>
         <source>Text align</source>
-        <translation>Alignement de texte</translation>
+        <translation>文本对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpreviewreportwindow.cpp" line="133"/>
         <source> of %1</source>
-        <translation> de %1</translation>
+        <translation> / %1</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ProxyHolder</name>
     <message>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="562"/>
         <source>Datasource has been invalidated</source>
-        <translation>La source de donnée n&apos;a pas été validée</translation>
+        <translation>数据源已失效</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::QObjectPropertyModel</name>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="40"/>
         <source>leftMargin</source>
-        <translation>Marge à gauche</translation>
+        <translation>左边距</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="41"/>
         <source>rightMargin</source>
-        <translation>Marge à droite</translation>
+        <translation>右边距</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="42"/>
         <source>topMargin</source>
-        <translation>Marge en haut</translation>
+        <translation>顶边距</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="43"/>
         <source>bottomMargin</source>
-        <translation>Marge en bas</translation>
+        <translation>底边距</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="44"/>
         <source>objectName</source>
-        <translation>Nom de l&apos;objet</translation>
+        <translation>对象名称</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="45"/>
         <source>borders</source>
-        <translation>Bordures</translation>
+        <translation>边框</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="46"/>
         <source>geometry</source>
-        <translation>Géométrie</translation>
+        <translation>形状</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="47"/>
         <source>itemAlign</source>
-        <translation>Alignement de l&apos;élément</translation>
+        <translation>对齐方式</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="48"/>
         <source>pageOrientation</source>
-        <translation>Orientation de la page</translation>
+        <translation>页面布局</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="49"/>
         <source>pageSize</source>
-        <translation>Taille de la page</translation>
+        <translation>页面规格</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="50"/>
         <source>TopLine</source>
-        <translation>Ligne supérieur</translation>
+        <translation>顶边框</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="51"/>
         <source>BottomLine</source>
-        <translation>Ligne inférieur</translation>
+        <translation>底边框</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="52"/>
         <source>LeftLine</source>
-        <translation>Ligne gauche</translation>
+        <translation>左边框</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="53"/>
         <source>RightLine</source>
-        <translation>Ligne droite</translation>
+        <translation>右边框</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="54"/>
         <source>reprintOnEachPage</source>
-        <translation>Imprimer dans chaque page</translation>
+        <translation>重新打印每页</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="55"/>
         <source>borderLineSize</source>
-        <translation>Taille de la lignes de bordure</translation>
+        <translation>边框线宽</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="56"/>
         <source>autoHeight</source>
-        <translation>Hauteur automatique</translation>
+        <translation>自动高度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="57"/>
         <source>backgroundColor</source>
-        <translation>Couleur de fond</translation>
+        <translation>背景颜色</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="58"/>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="93"/>
         <source>columnCount</source>
-        <translation>Nombre de colonne</translation>
+        <translation>列数</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="59"/>
         <source>columnsFillDirection</source>
-        <translation>Direction de remplissage des colonnes</translation>
+        <translation>列填充方向</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="60"/>
         <source>datasource</source>
-        <translation>Source de donnée</translation>
+        <translation>数据源</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="61"/>
         <source>keepBottomSpace</source>
-        <translation>Garder l&apos;espace inférieur</translation>
+        <translation>保持底部空间</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="62"/>
         <source>keepFooterTogether</source>
-        <translation>Joindre avec le pied de page</translation>
+        <translation>保持页脚</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="63"/>
         <source>keepSubdetailTogether</source>
-        <translation>Joindre avec le sous-détail</translation>
+        <translation>保持子细节脚</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="64"/>
         <source>printIfEmpty</source>
-        <translation>Imprimer si vide</translation>
+        <translation>为空时打印</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="65"/>
         <source>sliceLastRow</source>
-        <translation>Couper la dernière rangée</translation>
+        <translation>分割末行</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="66"/>
         <source>splittable</source>
-        <translation>Divisible</translation>
+        <translation>可拆分</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="67"/>
         <source>alignment</source>
-        <translation type="unfinished">Alignement</translation>
+        <translation>对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="68"/>
         <source>angle</source>
-        <translation>Angle</translation>
+        <translation>角度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="69"/>
         <source>autoWidth</source>
-        <translation>Largeur automatique</translation>
+        <translation>自动宽度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="70"/>
         <source>backgroundMode</source>
-        <translation>Motif de fond</translation>
+        <translation>背景模式</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="71"/>
         <source>backgroundOpacity</source>
-        <translation>Transparence de fond</translation>
+        <translation>背景不透明度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="72"/>
         <source>content</source>
-        <translation>Contenu</translation>
+        <translation>内容</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="73"/>
         <source>font</source>
-        <translation>Police</translation>
+        <translation>字体</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="74"/>
         <source>fontColor</source>
-        <translation>Couleur de police</translation>
+        <translation>字体颜色</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="75"/>
         <source>foregroundOpacity</source>
-        <translation>Transparence de premier-plan</translation>
+        <translation>背景不透明度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="76"/>
         <source>itemLocation</source>
-        <translation>Emplacement de l&apos;élément</translation>
+        <translation>组件位置</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="77"/>
         <source>margin</source>
-        <translation>Marge</translation>
+        <translation>边距</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="78"/>
         <source>stretchToMaxHeight</source>
-        <translation>Etirer à la hauteur maximale</translation>
+        <translation>拉伸到最大高度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="79"/>
         <source>trimValue</source>
-        <translation>Valeur d&apos;ajustement</translation>
+        <translation>裁剪值</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="80"/>
         <source>lineWidth</source>
-        <translation>Largeur de ligne</translation>
+        <translation>线宽</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="81"/>
         <source>opacity</source>
-        <translation>Transparence</translation>
+        <translation>不透明度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="82"/>
         <source>penStyle</source>
-        <translation>Style de pinceau</translation>
+        <translation>画笔样式</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="83"/>
         <source>shape</source>
-        <translation>Forme</translation>
+        <translation>形状</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="84"/>
         <source>shapeBrush</source>
-        <translation>Brosse de forme</translation>
+        <translation>画刷</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="85"/>
         <source>shapeBrushColor</source>
-        <translation>Couleur de brosse de forme</translation>
+        <translation>画刷颜色</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="86"/>
         <source>gridStep</source>
-        <translation>Grille</translation>
+        <translation>栅格长</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="87"/>
         <source>fullPage</source>
-        <translation>Page entière</translation>
+        <translation>全页</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="88"/>
         <source>oldPrintMode</source>
-        <translation>Mode d&apos;impression classique</translation>
+        <translation>旧打印模式</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="89"/>
         <source>borderColor</source>
-        <translation>Couleur de bordure</translation>
+        <translation>边框颜色</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="90"/>
         <source>resetPageNumber</source>
-        <translation>Réinitialiser le numéro de page</translation>
+        <translation>重置页号</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="91"/>
         <source>alternateBackgroundColor</source>
-        <translation>Couleurs de fond alternative</translation>
+        <translation>变更背景色</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="92"/>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="99"/>
         <source>backgroundBrushStyle</source>
-        <translation>Style de brosse de fond</translation>
+        <translation>背景画刷样式</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="94"/>
         <source>startFromNewPage</source>
-        <translation>Démarrer depuis une nouvelle page</translation>
+        <translation>从新页开始</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="95"/>
         <source>startNewPage</source>
-        <translation>Démarrer une nouvelle page</translation>
+        <translation>开始新页</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="96"/>
         <source>adaptFontToSize</source>
-        <translation>Adapter la police à lataille</translation>
+        <translation>字体适应字号</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="97"/>
         <source>allowHTML</source>
-        <translation>Interpréter HTML</translation>
+        <translation>允许HTML</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="98"/>
         <source>allowHTMLInFields</source>
-        <translation>Interpréter HTML dans les champs</translation>
+        <translation>允许字段HTML</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="100"/>
         <source>followTo</source>
-        <translation>Suivre pour</translation>
+        <translation>跟随</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="101"/>
         <source>format</source>
-        <translation>Format</translation>
+        <translation>格式</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="102"/>
         <source>lineSpacing</source>
-        <translation>Interligne</translation>
+        <translation>线距</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="103"/>
         <source>textIndent</source>
-        <translation>Indentation de texte</translation>
+        <translation>文本缩进</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="104"/>
         <source>textLayoutDirection</source>
-        <translation>Disposition du texte</translation>
+        <translation>文本布局方向</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="105"/>
         <source>underlineLineSize</source>
-        <translation>Taille de soulignement</translation>
+        <translation>下划线宽</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="106"/>
         <source>underlines</source>
-        <translation>Soulignes</translation>
+        <translation>下划线</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="107"/>
         <source>valueType</source>
-        <translation>Type de valeur</translation>
+        <translation>值类型</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="108"/>
         <source>securityLevel</source>
-        <translation>Niveau de sécurité</translation>
+        <translation>安全级别</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="109"/>
         <source>testValue</source>
-        <translation>Valeur de test</translation>
+        <translation>测试值</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="110"/>
         <source>whitespace</source>
-        <translation>Espace</translation>
+        <translation>空格</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="111"/>
         <source>resourcePath</source>
-        <translation>Chemin de ressources</translation>
+        <translation>资源路径</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="112"/>
         <source>scale</source>
-        <translation>Echelle</translation>
+        <translation>比例</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="113"/>
         <source>cornerRadius</source>
-        <translation>Rayon d&apos;angle</translation>
+        <translation>圆角半径</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="114"/>
         <source>shapeColor</source>
-        <translation>Couleur de forme</translation>
+        <translation>颜色</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="115"/>
         <source>layoutType</source>
-        <translation>Type de mise en page</translation>
+        <translation>布局类型</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="116"/>
         <source>barcodeType</source>
-        <translation>Type de code barre</translation>
+        <translation>条码类型</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="117"/>
         <source>barcodeWidth</source>
-        <translation>Largeur de code barre</translation>
+        <translation>条码宽度</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="118"/>
         <source>foregroundColor</source>
-        <translation>Couleur de premier-plan</translation>
+        <translation>颜色</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="119"/>
         <source>inputMode</source>
-        <translation>Mode de saisie</translation>
+        <translation>输入法</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="120"/>
         <source>pdf417CodeWords</source>
-        <translation></translation>
+        <translation>PDF417码</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="121"/>
         <source>autoSize</source>
-        <translation>Taille automatique</translation>
+        <translation>自动大小</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="122"/>
         <source>center</source>
-        <translation>Centrer</translation>
+        <translation>居中</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="123"/>
         <source>field</source>
-        <translation>Champ</translation>
+        <translation>字段</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="124"/>
         <source>image</source>
-        <translation>Image</translation>
+        <translation>图像</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="125"/>
         <source>keepAspectRatio</source>
-        <translation>Conserver les proportions</translation>
+        <translation>保持比例</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="126"/>
         <source>columnsCount</source>
-        <translation>Nombre de colonnes</translation>
+        <translation>列数</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="127"/>
         <source>useAlternateBackgroundColor</source>
-        <translation>Utiliser les couleurs de fond alternative</translation>
+        <translation>使用变更背景色</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="128"/>
         <source>printBeforePageHeader</source>
-        <translation>Imprimer avant le pied de page</translation>
+        <translation>页眉前打印</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="129"/>
         <source>maxScalePercent</source>
-        <translation>Pourcentage d&apos;échelle maximal</translation>
+        <translation>最大百分比</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="130"/>
         <source>printOnFirstPage</source>
-        <translation>Imprimer dans la première page</translation>
+        <translation>打印到首页</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="131"/>
         <source>printOnLastPage</source>
-        <translation>Imprimer dans la dernière page</translation>
+        <translation>打印到尾页</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="132"/>
         <source>printAlways</source>
-        <translation>Toujours imprimé</translation>
+        <translation>始终打印</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="133"/>
         <source>repeatOnEachRow</source>
-        <translation>Répéter dans chaque ligne</translation>
+        <translation>每行重复</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="134"/>
         <source>condition</source>
-        <translation>Condition</translation>
+        <translation>条件</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="135"/>
         <source>groupFieldName</source>
-        <translation>Nom du champ de groupe</translation>
+        <translation>组字段名</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="136"/>
         <source>keepGroupTogether</source>
-        <translation>Joindre avec le groupe</translation>
+        <translation>保持组脚</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="230"/>
         <source>Property Name</source>
-        <translation>Nom de la propriété</translation>
+        <translation>属性名</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="231"/>
         <source>Property value</source>
-        <translation>Valeur de la propriété</translation>
+        <translation>属性值</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/lrobjectitemmodel.cpp" line="438"/>
         <source>Warning</source>
-        <translation>Avertissement</translation>
+        <translation>警告</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::RectMMPropItem</name>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="111"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="116"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="121"/>
         <source>width</source>
-        <translation>Largeur</translation>
+        <translation>宽</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="112"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="117"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="122"/>
         <source>height</source>
-        <translation>Hauteur</translation>
+        <translation>高</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::RectPropItem</name>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="83"/>
         <source>width</source>
-        <translation>Largeur</translation>
+        <translation>宽</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="84"/>
         <source>height</source>
-        <translation>Hauteur</translation>
+        <translation>高</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ReportDesignWidget</name>
     <message>
-        <location filename="../limereport/lrreportdesignwidget.cpp" line="168"/>
         <source>Script</source>
-        <translation>Script</translation>
+        <translation>脚本</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwidget.cpp" line="291"/>
         <source>Report file name</source>
-        <translation>Nom du rapport</translation>
+        <translation>报表文件名</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwidget.cpp" line="308"/>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>错误</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwidget.cpp" line="308"/>
         <source>Wrong file format</source>
-        <translation>Format de fichier incorrect</translation>
+        <translation>文件格式错误</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ReportDesignWindow</name>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="96"/>
         <source>New Report</source>
-        <translation>Nouveau rapport</translation>
+        <translation>新建报表</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="101"/>
         <source>New Report Page</source>
-        <translation>Nouvelle page</translation>
+        <translation>新建页</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="105"/>
         <source>Delete Report Page</source>
-        <translation>Supprimer une page</translation>
+        <translation>删除也</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="110"/>
         <source>Edit Mode</source>
-        <translation>Mode d&apos;édition</translation>
+        <translation>编辑模式</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="116"/>
         <source>Undo</source>
-        <translation>Annuler</translation>
+        <translation>撤销</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="122"/>
         <source>Redo</source>
-        <translation>Répéter</translation>
+        <translation>重做</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="128"/>
         <source>Copy</source>
-        <translation>Copier</translation>
+        <translation>复制</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="133"/>
         <source>Paste</source>
-        <translation>Coller</translation>
+        <translation>粘贴</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="138"/>
         <source>Cut</source>
-        <translation>Couper</translation>
+        <translation>剪切</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="143"/>
         <source>Settings</source>
-        <translation>Paramètres</translation>
+        <translation>设置</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="147"/>
         <source>Use grid</source>
-        <translation>Utiliser la grille</translation>
+        <translation>使用栅格</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="153"/>
         <source>Use magnet</source>
-        <translation>Utiliser l&apos;aimant</translation>
+        <translation>使用磁力</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="160"/>
         <source>Text Item</source>
-        <translation>Elément de texte</translation>
+        <translation>文本组件</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="165"/>
         <source>Save Report</source>
-        <translation>Enregistrer le rapport</translation>
+        <translation>保存报表</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="170"/>
         <source>Save Report As</source>
-        <translation>Enregistrer le rapport sous</translation>
+        <translation>另存为</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="175"/>
         <source>Load Report</source>
-        <translation>Ouvrir un rapport</translation>
+        <translation>读取报表</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="180"/>
         <source>Delete item</source>
-        <translation>Supprimer élément</translation>
+        <translation>删除组建</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="185"/>
         <source>Zoom In</source>
-        <translation>Zoom avant</translation>
+        <translation>放大</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="189"/>
         <source>Zoom Out</source>
-        <translation>Zoom arrière</translation>
+        <translation>缩小</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="193"/>
         <source>Render Report</source>
-        <translation>Afficher l&apos;aperçu du rapport</translation>
+        <translation>生成报表</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="207"/>
         <source>Edit layouts mode</source>
-        <translation>Modifier le mode de mise en forme</translation>
+        <translation>编辑布局模式</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="212"/>
         <source>Horizontal layout</source>
-        <translation>Mise en page horizontale</translation>
+        <translation>水平布局</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="216"/>
         <source>About</source>
-        <translation>A propos</translation>
+        <translation>关于</translation>
     </message>
     <message>
-        <source>Hide left panel</source>
-        <translation type="vanished">Masquer le panneau de gauche</translation>
-    </message>
-    <message>
-        <source>Hide right panel</source>
-        <translation type="vanished">Masquer le panneau de droite</translation>
-    </message>
-    <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="220"/>
         <source>Hide left panel | Alt+L</source>
-        <translation type="unfinished"></translation>
+        <translation>隐藏左面板 | Alt+L</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="226"/>
         <source>Hide right panel | Alt+R</source>
-        <translation type="unfinished"></translation>
+        <translation>隐藏右面板 | Alt+R</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="235"/>
         <source>Report Tools</source>
-        <translation>Outils de rapport</translation>
+        <translation>报表工具</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="262"/>
         <source>Main Tools</source>
-        <translation>Outils principales</translation>
+        <translation>工具</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="295"/>
         <source>Font</source>
-        <translation>Police</translation>
+        <translation>字体</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="299"/>
         <source>Text alignment</source>
-        <translation>Alignement de texte</translation>
+        <translation>文本对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="303"/>
         <source>Items alignment</source>
-        <translation>Alignement des éléments</translation>
+        <translation>组件对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="310"/>
         <source>Borders</source>
-        <translation>Bordures</translation>
+        <translation>边框</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="337"/>
         <source>Report bands</source>
-        <translation>Bandesde rapport</translation>
+        <translation>报表带</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="341"/>
         <source>Report Header</source>
-        <translation>En-tête du rapport</translation>
+        <translation>表头</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="346"/>
         <source>Report Footer</source>
-        <translation>Pied de rapport</translation>
+        <translation>表脚</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="351"/>
         <source>Page Header</source>
-        <translation>En-tête de page</translation>
+        <translation>页眉</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="356"/>
         <source>Page Footer</source>
-        <translation>Pied de page</translation>
+        <translation>页脚</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="361"/>
         <source>Data</source>
-        <translation>Données</translation>
+        <translation>数据带</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="366"/>
         <source>Data Header</source>
-        <translation>En-tête de données</translation>
+        <translation>数据带头</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="372"/>
         <source>Data Footer</source>
-        <translation>Pied de données</translation>
+        <translation>数据带脚</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="378"/>
         <source>SubDetail</source>
-        <translation>Sous-détails</translation>
+        <translation>子细节带</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="384"/>
         <source>SubDetailHeader</source>
-        <translation>En-tête de sous-détails</translation>
+        <translation>子细节带头</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="390"/>
         <source>SubDetailFooter</source>
-        <translation>Pied de sous-détails</translation>
+        <translation>子细节带脚</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="396"/>
         <source>GroupHeader</source>
-        <translation>En-tête de groupe</translation>
+        <translation>组带头</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="402"/>
         <source>GroupFooter</source>
-        <translation>Pied de groupe</translation>
+        <translation>组带脚</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="408"/>
         <source>Tear-off Band</source>
-        <translation>Bande détachable</translation>
+        <translation>分离带</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="418"/>
         <source>File</source>
-        <translation>Fichier</translation>
+        <translation>文件</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="425"/>
         <source>Edit</source>
-        <translation>Edition</translation>
+        <translation>编辑</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="432"/>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="434"/>
         <source>Recent Files</source>
-        <translation>Fichiers récents</translation>
+        <translation>最近打开文件</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="485"/>
         <source>Object Inspector</source>
-        <translation>Inspecteur d&apos;objets</translation>
+        <translation>对象观察器</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="494"/>
         <source>Report structure</source>
-        <translation>Structure du rapport</translation>
+        <translation>报表结构</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="506"/>
         <source>Data Browser</source>
-        <translation>Navigateur de données</translation>
+        <translation>数据浏览器</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="519"/>
         <source>Script Browser</source>
-        <translation>Navigateur de script</translation>
+        <translation>脚本浏览器</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="686"/>
         <source>Report has been modified! Do you want save the report?</source>
-        <translation>Le rapport a été modifié! Voulez-vous l&apos;enregistrer?</translation>
+        <translation>报表已修改! 是否保存?</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="909"/>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="922"/>
         <source>Report file name</source>
-        <translation>Nom du fichier du rapport</translation>
+        <translation>报表文件名</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="1135"/>
         <source>Rendering report</source>
-        <translation>Afficher l&apos;aperçu du rapport</translation>
+        <translation>生成报表</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="1135"/>
         <source>Abort</source>
-        <translation>Quitter</translation>
+        <translation>关于</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="1144"/>
         <source> page rendered</source>
-        <translation> du rendu de la page</translation>
+        <translation>报表生成</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="1221"/>
         <source>Warning</source>
-        <translation>Avertissement</translation>
+        <translation>警告</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="1221"/>
         <source>File &quot;%1&quot; not found!</source>
-        <translation>Fichier &quot;%1&quot; introuvable!</translation>
+        <translation>未找到文件 &quot;%1&quot;!</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ReportEnginePrivate</name>
     <message>
-        <location filename="../limereport/lrreportengine.cpp" line="64"/>
         <source>Preview</source>
-        <translation>Aperçu avant impression</translation>
+        <translation>预览</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportengine.cpp" line="163"/>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>错误</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportengine.cpp" line="475"/>
         <source>Report File Change</source>
-        <translation>Nom du fichier changé</translation>
+        <translation>报表文件改变</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportengine.cpp" line="476"/>
         <source>The report file &quot;%1&quot; has changed names or been deleted.
 
 This preview is no longer valid.</source>
-        <translation>Le fichier du rapport &quot;%1&quot; a changé de nom ou a été supprimé.
+        <translation>报表文件 &quot;%1&quot; 重命名或删除。
 
-Cet aperçu n&apos;est plus valide.</translation>
+预览已无效。</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ReportFooter</name>
     <message>
-        <location filename="../limereport/bands/lrreportfooter.cpp" line="52"/>
         <source>Report Footer</source>
-        <translation>Pied de rapport</translation>
+        <translation>表脚</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ReportHeader</name>
     <message>
-        <location filename="../limereport/bands/lrreportheader.cpp" line="50"/>
         <source>Report Header</source>
-        <translation>En-tête du rapport</translation>
+        <translation>表头</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ReportRender</name>
     <message>
-        <location filename="../limereport/lrreportrender.cpp" line="175"/>
-        <location filename="../limereport/lrreportrender.cpp" line="190"/>
-        <location filename="../limereport/lrreportrender.cpp" line="203"/>
-        <location filename="../limereport/lrreportrender.cpp" line="243"/>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>错误</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportrender.cpp" line="282"/>
         <source>page index out of range</source>
-        <translation>Indice de la page dépassé</translation>
+        <translation>页索引越界</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportrender.cpp" line="352"/>
         <source>Databand &quot;%1&quot; not found</source>
-        <translation>Bande de données &quot;%1 introuvable</translation>
+        <translation>未找到数据带 &quot;%1&quot;</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportrender.cpp" line="359"/>
         <source>Wrong using function %1</source>
-        <translation>Utilisation incorrecte de la fonction &quot;%1&quot;</translation>
+        <translation>函数 %1 使用错误</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::SQLEditDialog</name>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="14"/>
         <source>Datasource</source>
-        <translation>Source de donnée</translation>
+        <translation>数据源</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="29"/>
         <source>Connection</source>
-        <translation>Connexion</translation>
+        <translation>数据连接</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="55"/>
         <source>Datasource Name</source>
-        <translation>Nom de source de donnée</translation>
+        <translation>数据源名</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="505"/>
         <source>Subdetail</source>
-        <translation>Sous-détails</translation>
+        <translation>子细节</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="514"/>
         <source>Master datasource</source>
-        <translation>Banse de donnée principale</translation>
+        <translation>主数据源</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="533"/>
         <source>Subquery mode</source>
-        <translation>Mode de sous-requêtes</translation>
+        <translation>子查询模式</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="543"/>
         <source>Filter mode</source>
-        <translation>Mode filtre</translation>
+        <translation>筛选模式</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="552"/>
         <source>SQL</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="591"/>
-        <location filename="../limereport/databrowser/lrsqleditdialog.cpp" line="350"/>
         <source>Preview</source>
-        <translation>Aperçu</translation>
+        <translation>预览</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="598"/>
         <source>Hide Preview</source>
-        <translation>Masquer l&apos;aperçu</translation>
+        <translation>隐藏预览</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="636"/>
         <source>Child datasource</source>
-        <translation>Source de donnée fille</translation>
+        <translation>子数据源</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="651"/>
         <source>Fields map</source>
-        <translation>Champs</translation>
+        <translation>字段映射</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="680"/>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="694"/>
         <source>...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="726"/>
         <source>Data preview</source>
-        <translation>Aperçu de données</translation>
+        <translation>数据预览</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="768"/>
         <source>Cancel</source>
-        <translation>Annuler</translation>
+        <translation>取消</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.ui" line="778"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.cpp" line="127"/>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>错误</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.cpp" line="150"/>
         <source>Datasource Name is empty!</source>
-        <translation>Nom de source de donnée est vide!</translation>
+        <translation>数据源名为空!</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.cpp" line="151"/>
         <source>SQL is empty!</source>
-        <translation>SQL est vide!</translation>
+        <translation>SQL语句为空!</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.cpp" line="154"/>
         <source>Datasource with name: &quot;%1&quot; already exists!</source>
-        <translation>La source de donnée avec le nom &quot;%1&quot; existe déja!</translation>
+        <translation>数据源 &quot;%1&quot; 已存在!</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.cpp" line="167"/>
         <source>defaultConnection</source>
-        <translation>Connexion par défaut</translation>
+        <translation>默认连接</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.cpp" line="219"/>
         <source>Datasource with name %1 already exist</source>
-        <translation>La source de donnée avec le nom &quot;%1&quot; existe déja!</translation>
+        <translation>数据源 &quot;%1&quot; 已存在</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.cpp" line="302"/>
-        <location filename="../limereport/databrowser/lrsqleditdialog.cpp" line="318"/>
         <source>Attention</source>
-        <translation></translation>
+        <translation>注意</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.cpp" line="302"/>
         <source>Connection is not specified</source>
-        <translation>La connexion n&apos;est pas spécifiée</translation>
+        <translation>未指定连接</translation>
     </message>
     <message>
-        <location filename="../limereport/databrowser/lrsqleditdialog.cpp" line="313"/>
         <source>Refresh</source>
-        <translation>Actualiser</translation>
+        <translation>刷新</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ScriptBrowser</name>
     <message>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.ui" line="14"/>
         <source>Form</source>
-        <translation>Formulaire</translation>
+        <translation>表单</translation>
     </message>
     <message>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.ui" line="42"/>
         <source>Functions</source>
-        <translation>Fonctions</translation>
+        <translation>函数</translation>
     </message>
     <message>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.ui" line="68"/>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.ui" line="88"/>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.ui" line="108"/>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.ui" line="182"/>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.ui" line="202"/>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.ui" line="222"/>
         <source>...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.ui" line="156"/>
         <source>Dialogs</source>
-        <translation>Dialogues</translation>
+        <translation>对话框</translation>
     </message>
     <message>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.ui" line="267"/>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.ui" line="272"/>
         <source>Name</source>
-        <translation>Nom</translation>
+        <translation>名称</translation>
     </message>
     <message>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.cpp" line="71"/>
         <source>NO CATEGORY</source>
-        <translation>AUCUNE CATEGORIE</translation>
+        <translation>无类别</translation>
     </message>
     <message>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.cpp" line="162"/>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.cpp" line="166"/>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.cpp" line="168"/>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>错误</translation>
     </message>
     <message>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.cpp" line="162"/>
         <source>Dialog with name: %1 already exists</source>
-        <translation>Le dialogue avec le nom &quot;%1&quot; existe déja</translation>
+        <translation>对话框 %1 已存在</translation>
     </message>
     <message>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.cpp" line="166"/>
         <source>ui file must cointain QDialog instead QWidget or QMainWindow</source>
-        <translation>Le fichier ui doit contenir un QDialog au lieu de QWidget ou QMainWindow</translation>
+        <translation>ui 文件必须包含 QDialog 而不是 QWidget 或 QMainWindow</translation>
     </message>
     <message>
-        <location filename="../limereport/scriptbrowser/lrscriptbrowser.cpp" line="168"/>
         <source>wrong file format</source>
-        <translation>Format de fichier incorrect</translation>
+        <translation>文件格式错误</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ScriptEngineContext</name>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="829"/>
         <source>Dialog with name: %1 can`t be created</source>
-        <translation>Le dialogue avec le nom &quot;%1&quot; ne peut pas être crée</translation>
+        <translation>无法创建对话框 %1</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::ScriptEngineManager</name>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="463"/>
         <source>GROUP FUNCTIONS</source>
-        <translation>Fonctions de groupe</translation>
+        <translation>组函数</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="463"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="649"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="653"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="654"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="655"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="659"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="660"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="662"/>
         <source>Value</source>
-        <translation>Valeur</translation>
+        <translation>值</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="463"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="648"/>
         <source>BandName</source>
-        <translation>Nom de la bande</translation>
+        <translation>带名称</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="507"/>
         <source>Variable %1 not found</source>
-        <translation>Variable &quot;%1&quot; introuvable</translation>
+        <translation>未找到变量 %1</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="648"/>
         <source>SYSTEM</source>
-        <translation>Système</translation>
+        <translation>系统</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="649"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="659"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="660"/>
         <source>NUMBER</source>
-        <translation>Nombre</translation>
+        <translation>数字</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="649"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="652"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="653"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="654"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="655"/>
         <source>Format</source>
-        <translation></translation>
+        <translation>格式</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="650"/>
         <source>Precision</source>
-        <translation>Précision</translation>
+        <translation>精度</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="651"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="659"/>
         <source>Locale</source>
-        <translation>Local</translation>
+        <translation>区域</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="652"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="653"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="654"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="655"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="656"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="657"/>
         <source>DATE&amp;TIME</source>
-        <translation>DATE&amp;HEURE</translation>
+        <translation>日期时间</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="652"/>
         <source>Seconds</source>
-        <translation type="unfinished"></translation>
+        <translation>秒</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="660"/>
         <source>CurrencySymbol</source>
-        <translation>Symbolde de la monnaie</translation>
+        <translation>货币符号</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="662"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="663"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="664"/>
         <source>GENERAL</source>
-        <translation></translation>
+        <translation>通用</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="662"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="663"/>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="664"/>
         <source>Name</source>
-        <translation>Nom</translation>
+        <translation>名称</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::SettingDialog</name>
     <message>
-        <location filename="../limereport/lrsettingdialog.ui" line="14"/>
         <source>Designer setting</source>
-        <translation>Paramètres du Designer</translation>
+        <translation>设计器设置</translation>
     </message>
     <message>
-        <location filename="../limereport/lrsettingdialog.ui" line="20"/>
         <source>Designer Setting</source>
-        <translation>Paramètres du Designer</translation>
+        <translation>设计器设置</translation>
     </message>
     <message>
-        <location filename="../limereport/lrsettingdialog.ui" line="28"/>
         <source>Default font</source>
-        <translation>Police par défaut</translation>
+        <translation>默认字体</translation>
     </message>
     <message>
-        <location filename="../limereport/lrsettingdialog.ui" line="60"/>
         <source>Grid</source>
-        <translation>Grille</translation>
+        <translation>栅格</translation>
     </message>
     <message>
-        <location filename="../limereport/lrsettingdialog.ui" line="68"/>
         <source>Vertical grid step</source>
-        <translation>Grille verticale</translation>
+        <translation>竖栅格</translation>
     </message>
     <message>
-        <location filename="../limereport/lrsettingdialog.ui" line="82"/>
         <source>Horizontal grid step</source>
-        <translation>Grille horizontale</translation>
+        <translation>横栅格</translation>
     </message>
     <message>
-        <location filename="../limereport/lrsettingdialog.ui" line="117"/>
         <source>Report Setting</source>
-        <translation>Paramètres du rapport</translation>
+        <translation>报表设置</translation>
     </message>
     <message>
-        <location filename="../limereport/lrsettingdialog.ui" line="123"/>
         <source>Suppress absent fields and variables warning</source>
-        <translation>Effacer les messages d&apos;absences de champs et d&apos;avertissement de variables</translation>
+        <translation>抑制缺失字段及变量警告</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::SubDetailBand</name>
     <message>
-        <location filename="../limereport/bands/lrsubdetailband.cpp" line="81"/>
         <source>SubDetail</source>
-        <translation>Sous-détails</translation>
+        <translation>子细节</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::SubDetailHeaderBand</name>
     <message>
-        <location filename="../limereport/bands/lrsubdetailband.cpp" line="111"/>
         <source>SubDetailHeader</source>
-        <translation>En-tête de sous-détails</translation>
+        <translation>子细节头</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::TearOffBand</name>
     <message>
-        <location filename="../limereport/bands/lrtearoffband.cpp" line="23"/>
         <source>Tear-off Band</source>
-        <translation>Bande détachable</translation>
+        <translation>分离带</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::TextAlignmentEditorWidget</name>
     <message>
-        <location filename="../limereport/items/editors/lrtextalignmenteditorwidget.cpp" line="69"/>
         <source>Text align left</source>
-        <translation>Aligner le texte à gauche</translation>
+        <translation>文本左对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lrtextalignmenteditorwidget.cpp" line="75"/>
-        <location filename="../limereport/items/editors/lrtextalignmenteditorwidget.cpp" line="101"/>
         <source>Text align center</source>
-        <translation>Aligner le texte au milieu</translation>
+        <translation>文本居中对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lrtextalignmenteditorwidget.cpp" line="81"/>
         <source>Text align right</source>
-        <translation>Aligner le texte à droite</translation>
+        <translation>文本右对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lrtextalignmenteditorwidget.cpp" line="87"/>
         <source>Text align justify</source>
-        <translation>Justifier le texte</translation>
+        <translation>文本行对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lrtextalignmenteditorwidget.cpp" line="95"/>
         <source>Text align top</source>
-        <translation>Aligner le texte en haut</translation>
+        <translation>文本顶部对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/editors/lrtextalignmenteditorwidget.cpp" line="107"/>
         <source>Text align bottom</source>
-        <translation>Aligner le texte en bas</translation>
+        <translation>文本底部对齐</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::TextItem</name>
     <message>
-        <location filename="../limereport/items/lrtextitem.cpp" line="86"/>
-        <location filename="../limereport/items/lrtextitem.cpp" line="112"/>
         <source>Edit</source>
-        <translation>Edition</translation>
+        <translation>编辑</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitem.cpp" line="92"/>
-        <location filename="../limereport/items/lrtextitem.cpp" line="115"/>
         <source>Auto height</source>
-        <translation>Hauteur automatique</translation>
+        <translation>自动高度</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitem.cpp" line="96"/>
-        <location filename="../limereport/items/lrtextitem.cpp" line="118"/>
         <source>Allow HTML</source>
-        <translation>Interpréter HTML</translation>
+        <translation>允许HTML</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitem.cpp" line="100"/>
-        <location filename="../limereport/items/lrtextitem.cpp" line="121"/>
         <source>Allow HTML in fields</source>
-        <translation>Interpréter HTML dans les champs</translation>
+        <translation>允许字段HTML</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitem.cpp" line="104"/>
-        <location filename="../limereport/items/lrtextitem.cpp" line="124"/>
         <source>Stretch to max height</source>
-        <translation>Etirer à la hauteur maximale</translation>
+        <translation>拉伸至最大高度</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitem.cpp" line="568"/>
-        <location filename="../limereport/items/lrtextitem.cpp" line="578"/>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>错误</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitem.cpp" line="569"/>
         <source>TextItem &quot; %1 &quot; already has folower &quot; %2 &quot; </source>
-        <translation>L&apos;élément texte &quot; %1 &quot; a toujours un copain &quot; %2 &quot; </translation>
+        <translation>文本框 &quot;%1 &quot; 已有 &quot;%2 &quot; </translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitem.cpp" line="579"/>
         <source>TextItem &quot; %1 &quot; not found!</source>
-        <translation>Elément &quot;%1&quot; introuvable!</translation>
+        <translation>未找到文本框 &quot;%1&quot;!</translation>
     </message>
 </context>
 <context>
     <name>LimeReport::TextItemEditor</name>
     <message>
-        <location filename="../limereport/items/lrtextitemeditor.ui" line="17"/>
         <source>Text Item Editor</source>
-        <translation>Editeur d&apos;élément de texte</translation>
+        <translation>文本编辑器</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitemeditor.ui" line="33"/>
         <source>Content</source>
-        <translation>Contenu</translation>
+        <translation>内容</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitemeditor.ui" line="78"/>
         <source>Data</source>
-        <translation>Données</translation>
+        <translation>数据</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitemeditor.ui" line="107"/>
         <source>Functions</source>
-        <translation>Fonctions</translation>
+        <translation>函数</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitemeditor.ui" line="138"/>
         <source>Editor settings</source>
-        <translation>Paramètres de l&apos;éditeur</translation>
+        <translation>编辑器设置</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitemeditor.ui" line="146"/>
         <source>Editor font</source>
-        <translation>Police</translation>
+        <translation>编辑器字体</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitemeditor.ui" line="183"/>
         <source>...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitemeditor.ui" line="213"/>
         <source>Ok</source>
+        <translation>确定</translation>
+    </message>
+    <message>
+        <source>Ctrl+Return</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitemeditor.ui" line="216"/>
-        <source>Ctrl+Return</source>
-        <translation>Ctrl+Arrière</translation>
-    </message>
-    <message>
-        <location filename="../limereport/items/lrtextitemeditor.ui" line="223"/>
         <source>Cancel</source>
-        <translation>Annuler</translation>
+        <translation>取消</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitemeditor.ui" line="226"/>
         <source>Esc</source>
-        <translation>Echap</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>LimeReport::VariablesHolder</name>
     <message>
-        <location filename="../limereport/lrvariablesholder.cpp" line="66"/>
-        <location filename="../limereport/lrvariablesholder.cpp" line="81"/>
-        <location filename="../limereport/lrvariablesholder.cpp" line="100"/>
-        <location filename="../limereport/lrvariablesholder.cpp" line="148"/>
         <source>variable with name </source>
-        <translation>La variable avec le nom </translation>
+        <translation>变量</translation>
     </message>
     <message>
-        <location filename="../limereport/lrvariablesholder.cpp" line="66"/>
         <source> already exists!</source>
-        <translation> existe déja!</translation>
+        <translation>已存在!</translation>
     </message>
     <message>
-        <location filename="../limereport/lrvariablesholder.cpp" line="81"/>
-        <location filename="../limereport/lrvariablesholder.cpp" line="100"/>
-        <location filename="../limereport/lrvariablesholder.cpp" line="148"/>
         <source> does not exists!</source>
-        <translation> n&apos;existe pas!</translation>
+        <translation>不存在!</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../limereport/bands/lrdataband.cpp" line="52"/>
-        <location filename="../limereport/lrbandsmanager.cpp" line="51"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="144"/>
         <source>Data</source>
-        <translation>Données</translation>
+        <translation>数据带</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrdataband.cpp" line="57"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="149"/>
         <source>DataHeader</source>
-        <translation>En-tête de données</translation>
+        <translation>数据带头</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrdataband.cpp" line="62"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="154"/>
         <source>DataFooter</source>
-        <translation>Pied de données</translation>
+        <translation>数据带脚</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrgroupbands.cpp" line="45"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="159"/>
         <source>GroupHeader</source>
-        <translation>En-tête de groupe</translation>
+        <translation>组带头</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrgroupbands.cpp" line="55"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="164"/>
         <source>GroupFooter</source>
-        <translation>Pied de groupe</translation>
+        <translation>组带脚</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrpagefooter.cpp" line="43"/>
-        <location filename="../limereport/lrbandsmanager.cpp" line="50"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="169"/>
         <source>Page Footer</source>
-        <translation>Pied de page</translation>
+        <translation>页脚</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrpageheader.cpp" line="47"/>
-        <location filename="../limereport/lrbandsmanager.cpp" line="49"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="174"/>
         <source>Page Header</source>
-        <translation>En-tête de page</translation>
+        <translation>页眉</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrreportfooter.cpp" line="43"/>
-        <location filename="../limereport/lrbandsmanager.cpp" line="50"/>
         <source>Report Footer</source>
-        <translation>Pied de rapport</translation>
+        <translation>表脚</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrreportheader.cpp" line="42"/>
-        <location filename="../limereport/lrbandsmanager.cpp" line="49"/>
         <source>Report Header</source>
-        <translation>En-tête du rapport</translation>
+        <translation>表头</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrsubdetailband.cpp" line="48"/>
-        <location filename="../limereport/lrbandsmanager.cpp" line="51"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="179"/>
         <source>SubDetail</source>
-        <translation>Sous-détails</translation>
+        <translation>子细节</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrsubdetailband.cpp" line="58"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="185"/>
         <source>SubDetailHeader</source>
-        <translation>En-tête de sous-détails</translation>
+        <translation>子细节头</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrsubdetailband.cpp" line="68"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="190"/>
         <source>SubDetailFooter</source>
-        <translation>Pied de sous-détails</translation>
+        <translation>子细节带脚</translation>
     </message>
     <message>
-        <location filename="../limereport/bands/lrtearoffband.cpp" line="13"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="195"/>
         <source>Tear-off Band</source>
-        <translation>Bande détachable</translation>
+        <translation>分离带</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lralignpropitem.cpp" line="44"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="356"/>
         <source>alignment</source>
-        <translation type="unfinished">Alignement</translation>
+        <translation>对齐</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrbarcodeitem.cpp" line="42"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="127"/>
         <source>Barcode Item</source>
-        <translation>Elément de code barre</translation>
+        <translation>条码组件</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrhorizontallayout.cpp" line="50"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="133"/>
         <source>HLayout</source>
-        <translation></translation>
+        <translation>水平布局</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrimageitem.cpp" line="43"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="137"/>
         <source>Image Item</source>
-        <translation></translation>
+        <translation>图像组件</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrshapeitem.cpp" line="43"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="140"/>
         <source>Shape Item</source>
-        <translation></translation>
+        <translation>图形组件</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrsubitemparentpropitem.cpp" line="45"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="359"/>
         <source>itemLocation</source>
-        <translation></translation>
+        <translation>组件位置</translation>
     </message>
     <message>
-        <location filename="../limereport/items/lrtextitem.cpp" line="54"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="121"/>
         <source>Text Item</source>
-        <translation></translation>
+        <translation>文本组件</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="76"/>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="120"/>
         <source>Invalid connection! %1</source>
-        <translation>Connexion invalidé %1</translation>
+        <translation>无效连接 %1</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="425"/>
         <source>Master datasource &quot;%1&quot; not found!</source>
-        <translation>Source de donnée principale &quot;%1&quot; introuvable!</translation>
+        <translation>未找到主数据源 &quot;%1&quot;!</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="533"/>
         <source>Master datasouce &quot;%1&quot; not found!</source>
-        <translation>Source de donnée principale &quot;%1&quot; introuvable!</translation>
+        <translation>未找到主数据源 &quot;%1&quot;!</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="534"/>
         <source>Child</source>
-        <translation>Enfant</translation>
+        <translation>子</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="534"/>
         <source> and child </source>
-        <translation> est enfant </translation>
+        <translation>子数据源</translation>
     </message>
     <message>
-        <location filename="../limereport/lrdatadesignintf.cpp" line="535"/>
         <source>datasouce &quot;%1&quot; not found!</source>
-        <translation>Source de donnée &quot;%1&quot; introuvable!</translation>
+        <translation>未找到子数据源&quot;%1&quot;!</translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="302"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrboolpropitem.cpp" line="45"/>
         <source>bool</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="305"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrcolorpropitem.cpp" line="40"/>
         <source>QColor</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="308"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrcontentpropitem.cpp" line="13"/>
         <source>content</source>
-        <translation>Contenu</translation>
+        <translation>内容</translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="311"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="314"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrdatasourcepropitem.cpp" line="49"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrdatasourcepropitem.cpp" line="52"/>
         <source>datasource</source>
-        <translation>Source de donnée</translation>
+        <translation>数据源</translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="317"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="329"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrdatasourcepropitem.cpp" line="55"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrgroupfieldpropitem.cpp" line="40"/>
         <source>field</source>
-        <translation>Champ</translation>
+        <translation>字段映射</translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="320"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrenumpropitem.cpp" line="42"/>
         <source>enum</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="323"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrflagspropitem.cpp" line="50"/>
         <source>flags</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="326"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrfontpropitem.cpp" line="44"/>
         <source>QFont</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="332"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrimagepropitem.cpp" line="39"/>
         <source>QImage</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="335"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrintpropitem.cpp" line="41"/>
         <source>int</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="338"/>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="341"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrqrealpropitem.cpp" line="41"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrqrealpropitem.cpp" line="42"/>
         <source>qreal</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="344"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="53"/>
         <source>QRect</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="347"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="54"/>
         <source>QRectF</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="350"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="55"/>
         <source>geometry</source>
-        <translation></translation>
+        <translation>形状</translation>
     </message>
     <message>
-        <location filename="../limereport/lrfactoryinitializer.cpp" line="353"/>
-        <location filename="../limereport/objectinspector/propertyItems/lrstringpropitem.cpp" line="44"/>
         <source>QString</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../limereport/lrpagedesignintf.cpp" line="1538"/>
         <source>Attention!</source>
-        <translation></translation>
+        <translation>注意!</translation>
     </message>
     <message>
-        <location filename="../limereport/lrpagedesignintf.cpp" line="1538"/>
         <source>Selected elements have different parent containers</source>
-        <translation>Les éléments sélectionnés ont un parent différent</translation>
+        <translation>选中元素有不同的容器</translation>
     </message>
     <message>
-        <location filename="../limereport/lrreportdesignwindow.cpp" line="1272"/>
         <source>Object with name %1 already exists!</source>
-        <translation>L&apos;objet avec le nom &quot;%1&quot; existe déja!</translation>
+        <translation>对象 %1 已存在!</translation>
     </message>
     <message>
-        <location filename="../limereport/lrscriptenginemanager.cpp" line="359"/>
         <source>Function %1 not found or have wrong arguments</source>
-        <translation>La fonction %1 est introuvable ou contient des paramètres incorrects</translation>
+        <translation>未找到函数 %1 或参数错误</translation>
     </message>
     <message>
-        <location filename="../limereport/objectinspector/propertyItems/lrrectproptem.cpp" line="167"/>
         <source>mm</source>
-        <translation></translation>
+        <translation>毫米</translation>
     </message>
     <message>
-        <location filename="../limereport/serializators/lrxmlreader.cpp" line="216"/>
         <source>Wrong file format</source>
-        <translation>Format de fichier incorrect</translation>
+        <translation>文件格式错误</translation>
     </message>
     <message>
-        <location filename="../limereport/serializators/lrxmlreader.cpp" line="219"/>
         <source>File %1 not opened</source>
-        <translation>Fichier &quot;%1&quot; n&apos;est pas ouvert</translation>
+        <translation>无法打开文件 %1</translation>
     </message>
     <message>
-        <location filename="../limereport/serializators/lrxmlreader.cpp" line="228"/>
         <source>Content string is empty</source>
-        <translation>Contenu vide</translation>
+        <translation>字符串为空</translation>
     </message>
     <message>
-        <location filename="../limereport/serializators/lrxmlreader.cpp" line="236"/>
         <source>Content is empty</source>
-        <translation>Contenu vide</translation>
+        <translation>字符串为空</translation>
     </message>
 </context>
 </TS>

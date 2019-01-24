@@ -1,8 +1,12 @@
-CONFIG(release, debug|release) {
-	TARGET = limereport
+#TARGET = limereport
+
+
+CONFIG(debug, debug|release) {
+    TARGET = limereportd
 } else {
-	TARGET = limereportd
+    TARGET = limereport
 }
+
 
 TEMPLATE = lib
 
@@ -33,7 +37,6 @@ contains(CONFIG, staticlib){
 }
 
 EXTRA_FILES += \
-    $$PWD/lrglobal.cpp \
     $$PWD/lrglobal.h \
     $$PWD/lrdatasourcemanagerintf.h \
     $$PWD/lrreportengine.h \
@@ -61,9 +64,16 @@ unix:{
 }
 
 win32 {
+    DESTDIR = $${DEST_LIBS}
+    contains(QMAKE_HOST.os, Linux){
+        QMAKE_POST_LINK += mkdir -p $$quote($${DEST_INCLUDE_DIR}) $$escape_expand(\\n\\t) # qmake need make mkdir -p on subdirs more than root/
+        for(FILE,EXTRA_FILES){
+            QMAKE_POST_LINK += $$QMAKE_COPY $$quote($$FILE) $$quote($${DEST_INCLUDE_DIR}) $$escape_expand(\\n\\t) # inside of libs make /include/files
+        }
+	QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$quote($${DEST_INCLUDE_DIR}) $$quote($${DESTDIR})
+    } else {
     EXTRA_FILES ~= s,/,\\,g
     BUILD_DIR ~= s,/,\\,g
-    DESTDIR = $${DEST_LIBS}
     DEST_DIR = $$DESTDIR/include
     DEST_DIR ~= s,/,\\,g
     DEST_INCLUDE_DIR ~= s,/,\\,g
@@ -73,24 +83,42 @@ win32 {
     }
     QMAKE_POST_LINK += $$QMAKE_COPY_DIR \"$${DEST_INCLUDE_DIR}\" \"$${DEST_DIR}\"
 }
+}
 
 contains(CONFIG,zint){
     message(zint)
     INCLUDEPATH += $$ZINT_PATH/backend $$ZINT_PATH/backend_qt4
     DEPENDPATH += $$ZINT_PATH/backend $$ZINT_PATH/backend_qt4
-	LIBS += -L$${DEST_LIBS}
-	CONFIG(release, debug|release) {
-		LIBS += -lQtZint
-	} else {
-		LIBS += -lQtZintd
-	}
+    LIBS += -L$${DEST_LIBS}
+
+    CONFIG(debug, debug|release) {
+        LIBS += -lQtZintd
+    } else {
+        LIBS += -lQtZint
+    }
 }
+
+}
+
+
+#### Install mkspecs, headers and libs to QT_INSTALL_DIR
+
+headerFiles.path = $$[QT_INSTALL_HEADERS]/LimeReport/
+headerFiles.files = $${DEST_INCLUDE_DIR}/*
+INSTALLS += headerFiles
+
+mkspecs.path = $$[QT_INSTALL_DATA]/mkspecs/features
+mkspecs.files = limereport.prf
+INSTALLS += mkspecs
+
+target.path = $$[QT_INSTALL_LIBS]
+INSTALLS += target
 
 #######
 ####Automatically build required translation files (*.qm)
 
 contains(CONFIG,build_translations){
-    LANGUAGES = ru es_ES ar fr
+    LANGUAGES = ru es_ES ar fr zh
 
     defineReplace(prependAll) {
         for(a,$$1):result += $$2$${a}$$3

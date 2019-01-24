@@ -44,6 +44,7 @@ unix:{
     DESTDIR = $$DEST_DIR
 #    QMAKE_POST_LINK += mkdir -p $$quote($$REPORTS_DIR) |
     QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$quote($$EXTRA_DIR) $$quote($$REPORTS_DIR) $$escape_expand(\n\t)
+		
 linux{
     #Link share lib to ../lib rpath
     QMAKE_LFLAGS += -Wl,--rpath=\\\$\$ORIGIN
@@ -56,11 +57,14 @@ linux{
 }
 
 win32 {
+    DESTDIR = $$DEST_DIR
+    contains(QMAKE_HOST.os, Linux){
+        QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$quote($$EXTRA_DIR) $$quote($$REPORTS_DIR) $$escape_expand(\n\t)
+    } else {
     EXTRA_DIR ~= s,/,\\,g
     DEST_DIR ~= s,/,\\,g
     REPORTS_DIR ~= s,/,\\,g
 
-    DESTDIR = $$DEST_DIR
     RC_FILE += mainicon.rc
 
     QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$shell_quote($$EXTRA_DIR\\*) $$shell_quote($$REPORTS_DIR\\demo_reports) $$escape_expand(\\n\\t)

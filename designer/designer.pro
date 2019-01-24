@@ -21,7 +21,12 @@ macx{
 }
 
 unix:{
-    LIBS += -L$${DEST_LIBS} -llimereport
+    LIBS += -L$${DEST_LIBS}
+    CONFIG(debug, debug|release) {
+        LIBS += -llimereportd
+    } else {
+        LIBS += -llimereport
+    }
     !contains(CONFIG, static_build){
         contains(CONFIG,zint){
 			CONFIG(release, debug|release) {
@@ -65,5 +70,13 @@ win32 {
 	} else {
 		LIBS += -llimereportd
 	}
+}
+
+    LIBS += -L$${DEST_LIBS}
+    CONFIG(debug, debug|release) {
+        LIBS += -llimereportd
+    } else {
+        LIBS += -llimereport
+    }
 }
 

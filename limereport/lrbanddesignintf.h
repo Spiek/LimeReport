@@ -105,6 +105,8 @@ class BandDesignIntf : public ItemsContainerDesignInft
     Q_PROPERTY(QColor backgroundColor READ backgroundColor WRITE setBackgroundColor)
     Q_PROPERTY(BrushStyle backgroundBrushStyle READ backgroundBrushStyle WRITE setBackgroundBrushStyle)
     Q_PROPERTY(bool printIfEmpty READ printIfEmpty WRITE setPrintIfEmpty)
+    Q_PROPERTY(BGMode backgroundMode READ backgroundMode WRITE setBackgroundModeProperty)
+    Q_PROPERTY(int backgroundOpacity READ opacity WRITE setBackgroundOpacity)
     Q_ENUMS(BandColumnsLayoutType)
     friend class BandMarker;
     friend class BandNameLabel;
@@ -165,6 +167,7 @@ public:
     bool isConnectedToBand(BandDesignIntf::BandsType bandType) const;
 
     int minChildIndex(BandsType bandType);
+    int minChildIndex(QSet<BandsType> ignoredBands = QSet<BandDesignIntf::BandsType>());
     int maxChildIndex(BandDesignIntf::BandsType bandType) const;
     int maxChildIndex(QSet<BandsType> ignoredBands = QSet<BandDesignIntf::BandsType>()) const;
 
@@ -235,8 +238,12 @@ public:
     QColor alternateBackgroundColor() const;
     void setAlternateBackgroundColor(const QColor &alternateBackgroundColor);
     qreal bottomSpace() const;
+    void setBackgroundModeProperty(BGMode value);
+    void setBackgroundOpacity(int value);
+    int bootomSpace() const;
+    void setBootomSpace(int bootomSpace);
 signals:
-    void bandRendered(BandDesignIntf* band);        
+    void bandRendered(BandDesignIntf* band);
 protected:
     void  trimToMaxHeight(int maxHeight);
     void  setBandTypeText(const QString& value);
@@ -290,7 +297,7 @@ private:
     bool                        m_repeatOnEachRow;
     QMap<QString,BaseDesignIntf*> m_slicedItems;
     QColor 						m_alternateBackgroundColor;
-    InitializedValue 			m_bottomSpace;
+    int                         m_bottomSpace;
 };
 
 class DataBandDesignIntf : public BandDesignIntf{

@@ -70,7 +70,7 @@ bool QueryHolder::runQuery(IDataSource::DatasourceMode mode)
     m_mode = mode;
 
     QSqlDatabase db = QSqlDatabase::database(m_connectionName);
-    QSqlQuery* query = new QSqlQuery(db);
+    QSqlQuery query(db);
 
     if (!db.isValid()) {
         setLastError(QObject::tr("Invalid connection! %1").arg(m_connectionName));
@@ -82,13 +82,12 @@ bool QueryHolder::runQuery(IDataSource::DatasourceMode mode)
         if (!m_prepared) return false;
     }
 
-    query->prepare(m_preparedSQL);
-
-    fillParams(query);
-    query->exec();
+    query.prepare(m_preparedSQL);
+    fillParams(&query);
+    query.exec();
 
     QSqlQueryModel *model = new QSqlQueryModel;
-    model->setQuery(*query);
+    model->setQuery(query);
 
     while (model->canFetchMore())
         model->fetchMore();
@@ -629,14 +628,17 @@ QVariant MasterDetailProxyModel::sourceData(QString fieldName, int row) const
 QVariant MasterDetailProxyModel::masterData(QString fieldName) const
 {
     IDataSource* master = dataManager()->dataSource(m_masterName);
-    int columnIndex = master->columnIndexByName(fieldName);
-    if (columnIndex!=-1){
-        return master->data(fieldName);
-    } else {
-        throw ReportError(
-            tr("Field: \"%1\" not found in \"%2\" master datasource").arg(fieldName).arg(m_masterName)
-        );
+    if (master){
+        int columnIndex = master->columnIndexByName(fieldName);
+        if (columnIndex!=-1){
+            return master->data(fieldName);
+        } else {
+            throw ReportError(
+                tr("Field: \"%1\" not found in \"%2\" master datasource").arg(fieldName).arg(m_masterName)
+            );
+        }
     }
+    return QVariant();
 }
 
 bool CallbackDatasource::next(){
@@ -690,6 +692,7 @@ bool CallbackDatasource::prior(){
 
 void CallbackDatasource::first(){
     m_currentRow = 0;
+    m_getDataFromCache = false;
     m_eof=checkIfEmpty();
     bool result=false;
 

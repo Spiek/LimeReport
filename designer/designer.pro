@@ -78,5 +78,4 @@ win32 {
     } else {
         LIBS += -llimereport
     }
-}
 

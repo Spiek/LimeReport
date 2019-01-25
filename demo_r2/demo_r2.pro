@@ -93,4 +93,4 @@ CONFIG(debug, debug|release) {
 	}
 
     QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$shell_quote($$EXTRA_DIR\\*) $$shell_quote($$REPORTS_DIR\\demo_reports) $$escape_expand(\\n\\t)
-}
+

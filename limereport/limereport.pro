@@ -98,7 +98,6 @@ contains(CONFIG,zint){
     }
 }
 
-}
 
 
 #### Install mkspecs, headers and libs to QT_INSTALL_DIR

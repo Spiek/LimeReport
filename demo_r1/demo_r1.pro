@@ -56,33 +56,31 @@ linux{
     INSTALLS = target
 }
 
-win32 {
-    DESTDIR = $$DEST_DIR
-    contains(QMAKE_HOST.os, Linux){
-        QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$quote($$EXTRA_DIR) $$quote($$REPORTS_DIR) $$escape_expand(\n\t)
-    } else {
-    EXTRA_DIR ~= s,/,\\,g
-    DEST_DIR ~= s,/,\\,g
-    REPORTS_DIR ~= s,/,\\,g
 
-    RC_FILE += mainicon.rc
+DESTDIR = $$DEST_DIR
+contains(QMAKE_HOST.os, Linux){
+	QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$quote($$EXTRA_DIR) $$quote($$REPORTS_DIR) $$escape_expand(\n\t)
+} else {
+	EXTRA_DIR ~= s,/,\\,g
+	DEST_DIR ~= s,/,\\,g
+	REPORTS_DIR ~= s,/,\\,g
 
-    QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$shell_quote($$EXTRA_DIR\\*) $$shell_quote($$REPORTS_DIR\\demo_reports) $$escape_expand(\\n\\t)
-    !contains(CONFIG, static_build){
-        contains(CONFIG,zint){
-            CONFIG(release, debug|release) {
+	RC_FILE += mainicon.rc
+
+	QMAKE_POST_LINK += $$QMAKE_COPY_DIR $$shell_quote($$EXTRA_DIR\\*) $$shell_quote($$REPORTS_DIR\\demo_reports) $$escape_expand(\\n\\t)
+	!contains(CONFIG, static_build){
+		contains(CONFIG,zint){
+			CONFIG(release, debug|release) {
 				LIBS += -L$${DEST_LIBS} -lQtZint
 			} else {
 				LIBS += -L$${DEST_LIBS} -lQtZintd
 			}
-        }
-    }
-    LIBS += -L$${DEST_LIBS}
+		}
+	}
+	LIBS += -L$${DEST_LIBS}
 	CONFIG(release, debug|release) {
 		LIBS += -llimereport
 	} else {
 		LIBS += -llimereportd
 	}
 }
-
-

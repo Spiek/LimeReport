@@ -364,9 +364,12 @@ bool ReportEnginePrivate::printToPDF(const QString &fileName)
     return false;
 }
 
-void ReportEnginePrivate::previewReport(PreviewHints hints)
-{ 
-//    QTime start = QTime::currentTime();
+PreviewReportWindow* ReportEnginePrivate::createReportWindow(PreviewHints hints)
+{
+	// if we have allready an active PreviewReportWindow form, return it
+    if(m_activePreview) return m_activePreview;
+	
+	//    QTime start = QTime::currentTime();
     try{
         dataManager()->setDesignTime(false);
         ReportPages pages = renderToPages();
@@ -400,12 +403,19 @@ void ReportEnginePrivate::previewReport(PreviewHints hints)
             w->setPreviewScaleType(m_previewScaleType, m_previewScalePercent);
 
             connect(w,SIGNAL(destroyed(QObject*)), this, SLOT(slotPreviewWindowDestroyed(QObject*)));
-            w->exec();
         }
     } catch (ReportError &exception){
         saveError(exception.what());
         showError(exception.what());
     }
+    return m_activePreview;
+}
+
+
+void ReportEnginePrivate::previewReport(PreviewHints hints)
+{
+	PreviewReportWindow* w = createReportWindow(hints);
+	if(w) w->exec();
 }
 
 PreviewReportWidget* ReportEnginePrivate::createPreviewWidget(QWidget* parent){
@@ -894,6 +904,14 @@ bool ReportEngine::printToPDF(const QString &fileName)
 {
     Q_D(ReportEngine);
     return d->printToPDF(fileName);
+}
+
+QMainWindow* ReportEngine::createReportWindow(PreviewHints hints)
+{
+	Q_D(ReportEngine);
+    if (m_settings)
+        d->setSettings(m_settings);
+    return dynamic_cast<QMainWindow*>(d->createReportWindow(hints));
 }
 
 void ReportEngine::previewReport(PreviewHints hints)

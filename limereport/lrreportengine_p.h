@@ -41,6 +41,7 @@
 #include "lrreportrender.h"
 #include "serializators/lrstorageintf.h"
 #include "lrscriptenginemanager.h"
+#include "lrpreviewreportwidget.h"
 
 class QFileSystemWatcher;
 
@@ -49,6 +50,7 @@ namespace LimeReport{
 class PageDesignIntf;
 class PrintRange;
 class ReportDesignWindow;
+class PreviewReportWindow;
 
 //TODO: Add on render callback
 
@@ -88,6 +90,7 @@ public:
     bool    printPages(ReportPages pages, QPrinter *printer);
     void    printToFile(const QString& fileName);
     bool    printToPDF(const QString& fileName);
+    PreviewReportWindow* createReportWindow(PreviewHints hints = PreviewBarsUserSetting);
     void    previewReport(PreviewHints hints = PreviewBarsUserSetting);
     void    designReport();
     void    setSettings(QSettings* value);
@@ -180,7 +183,7 @@ private:
     bool m_showProgressDialog;
     QString m_reportsDir;
     QString m_reportName;
-    QMainWindow* m_activePreview;
+    PreviewReportWindow* m_activePreview;
     QIcon m_previewWindowIcon;
     QString m_previewWindowTitle;
     QPointer<ReportDesignWindow> m_designerWindow;

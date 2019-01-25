@@ -33,6 +33,7 @@
 #include <QObject>
 #include <QSettings>
 #include <QtPrintSupport/QPrintDialog>
+#include <QMainWindow>
 
 #include "lrglobal.h"
 #include "lrdatasourcemanagerintf.h"
@@ -77,6 +78,7 @@ public:
     void    printToFile(const QString& fileName);
     PageDesignIntf *createPreviewScene(QObject *parent = 0);
     bool    printToPDF(const QString& fileName);
+    QMainWindow* createReportWindow(PreviewHints hints = PreviewBarsUserSetting);
     void    previewReport(PreviewHints hints = PreviewBarsUserSetting);
     void    designReport();
     void    setShowProgressDialog(bool value);
